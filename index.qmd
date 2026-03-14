@@ -1,0 +1,15 @@
+---
+title: "NWSL Official Kickoff Times, TV Schedules, and Streaming Locations"
+---
+
+**Saturday, March 14**
+
+|**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
+|--------|---------|----------------------|---------|
+| Boston | NJ/NY | 12:30/**12:37 PM ET** | ABC, ESPN app, Disney+ |
+| Kansas City |Utah| 4:00/**4:07 PM ET** | ION
+| Bay | Denver| 6:30/**6:37 PM ET** | ION
+| North Carolina | Louisville | 7:00/**7:07 PM ET** | NWSL+
+| San Diego| Houston| 8:45/**8:52 PM ET**|ION
+
+: {tbl-colwidths="[66,66,80,80]"}
