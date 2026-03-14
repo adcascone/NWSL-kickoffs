@@ -13,3 +13,6 @@ title: "NWSL Official Kickoff Times, TV Schedules, and Streaming Locations"
 | San Diego| Houston| 8:45/**8:52 PM ET**|ION
 
 : {tbl-colwidths="[66,66,80,80]"}
+
+<br><br><br><br><br><br> [Website inspired by: <https://mlskickofftimes.com/>]{style="font-size:.5;"}.
+
