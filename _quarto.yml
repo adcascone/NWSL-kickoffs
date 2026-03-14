@@ -3,15 +3,11 @@ project:
 
 website:
   title: ""
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+
 
 format:
   html:
-    theme: sandstone
+    theme: lux
     css: styles.css
     toc: true
 
