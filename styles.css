@@ -7,5 +7,5 @@ thead th {
 
 /* Thin lines between each row */
 tbody td {
-  border-bottom: 1px solid #ccc; /* Thin row line */
+  border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
 }
