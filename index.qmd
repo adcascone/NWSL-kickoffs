@@ -1,5 +1,5 @@
 ---
-title: "NWSL Official Kickoff Times, TV Schedules, and Streaming Locations"
+title: "NWSL Official Kickoff Times and Streaming Locations"
 ---
 
 ### Saturday, March 14
@@ -7,10 +7,43 @@ title: "NWSL Official Kickoff Times, TV Schedules, and Streaming Locations"
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
 | Boston | NJ/NY | 12:30/**12:37 PM ET** | ABC, ESPN app, Disney+ |
-| Kansas City |Utah| 4:00/**4:07 PM ET** | ION
-| Bay | Denver| 6:30/**6:37 PM ET** | ION
-| North Carolina | Louisville | 7:00/**7:07 PM ET** | NWSL+
-| San Diego| Houston| 8:45/**8:52 PM ET**|ION
+| Kansas City |Utah| 4:00/**4:07 PM ET** | ION|
+| Bay | Denver| 6:30/**6:37 PM ET** | ION|
+| North Carolina | Louisville | 7:00/**7:07 PM ET** | NWSL+|
+| San Diego| Houston| 8:45/**8:52 PM ET**|ION|
+
+: {tbl-colwidths="[66,66,80,80]"}
+
+### Sunday, March 15
+
+|**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
+|--------|---------|----------------------|---------|
+| Orlando | Seattle | 4:00/**4:37 PM ET** | Victory+ |
+| Angel City |Chicago| 7:00/**7:07 PM ET** | Victory+|
+
+### Friday, March 20
+
+|**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
+|--------|---------|----------------------|---------|
+| Orlando | Denver | 8:00/**8:07 PM ET** | Victory+ |
+| Louisville |Washington| 8:00/**8:07 PM ET** | Victory+|
+| Portland |Seattle| 10:00/**10:07 PM ET** | Prime Video|
+
+### Saturday, March 21
+
+|**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
+|--------|---------|----------------------|---------|
+| Houston | Boston | 4:00/**4:07 PM ET** | ION |
+| NJ/NY |North Carolina| 6:30/**6:37 PM ET** | ION|
+| Bay |Angel City| 8:45/**8:52 PM ET** | ION|
+
+### Sunday, March 22
+
+|**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
+|--------|---------|----------------------|---------|
+| Chicago | Kansas City | 2:00/**2:07 PM ET** | ESPN2, ESPN app |
+| Utah Royals |san Diego| 7:00/**7:07 PM ET** | Victory+|
+
 
 : {tbl-colwidths="[66,66,80,80]"}
 
