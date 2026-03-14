@@ -1,1 +1,11 @@
 /* css styles */
+
+/* Remove all table borders */
+table, th, td {
+  border: none !important;
+}
+
+/* Add a single dark line under the header */
+thead {
+  border-bottom: 2.5px solid #333; /* Adjust thickness and color here */
+}
