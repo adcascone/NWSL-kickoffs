@@ -2,7 +2,7 @@
 
 /* Thick border under the header */
 thead th {
-  border-bottom: 3px solid black !important; /* Thick header line */
+  border-bottom: 2px solid black !important; /* Thick header line */
 }
 
 /* Thin lines between each row */
