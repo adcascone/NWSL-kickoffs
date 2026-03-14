@@ -9,7 +9,8 @@ format:
   html:
     theme: lux
     css: styles.css
-    toc: true    
+    toc: true
+    page-layout: article    
 
 
 
