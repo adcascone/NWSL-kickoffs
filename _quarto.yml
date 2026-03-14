@@ -10,7 +10,7 @@ format:
     theme: lux
     css: styles.css
     toc: true
-    page-layout: custom   
+    page-layout: article   
 
 
 
