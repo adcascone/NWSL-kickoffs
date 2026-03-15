@@ -1,17 +1,27 @@
 /* css styles */
 
-/* Thick border under the header */
-thead th {
-  border-bottom: 2px solid black !important; /* Thick header line */
+/* Container */
+/* Desktop: fixed width, centered */
+.quarto-container {
+width: 100%;
+max-width: 1200px; /* fixed width on desktop */
+margin-left: auto;
+margin-right: auto;
+padding: 0 15px; /* small gutter for mobile */
+box-sizing: border-box;
 }
 
-/* Thin lines between each row */
-tbody td {
-  border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
+/* Mobile: scale to screen width */
+@media (max-width: 768px) {
+.quarto-container {
+width: 100%;
+max-width: 100%;
+}
 }
 
-/* Make all tables fill available width */
+/* Table styling */
 table {
 width: 100%;
-table-layout: auto; /* automatically distribute column widths */
+table-layout: auto; /* auto column widths */
+border-collapse: collapse;
 }
