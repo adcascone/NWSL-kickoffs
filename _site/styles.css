@@ -18,6 +18,8 @@ tbody td {
   
   margin-left: auto;
   margin-right: auto;
+
+  padding: 16px
 }
 
 /* Ensure the content area fills that container */
