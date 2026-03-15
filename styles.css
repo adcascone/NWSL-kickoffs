@@ -22,6 +22,6 @@ max-width: 100%;
 /* Table styling */
 table {
 width: 100%;
-table-layout: auto; /* auto column widths */
+table-layout: fixed; 
 border-collapse: collapse;
 }
