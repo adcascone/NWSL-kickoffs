@@ -1,27 +1,33 @@
 /* css styles */
 
-/* Container */
-/* Desktop: fixed width, centered */
-.quarto-container {
-width: 100%;
-max-width: 1200px; /* fixed width on desktop */
-margin-left: auto;
-margin-right: auto;
-padding: 0 15px; /* small gutter for mobile */
-box-sizing: border-box;
+/* Thick border under the header */
+thead th {
+  border-bottom: 2px solid black !important; /* Thick header line */
 }
 
-/* Mobile: scale to screen width */
-@media (max-width: 768px) {
-.quarto-container {
-width: 100%;
-max-width: 100%;
-}
+/* Thin lines between each row */
+tbody td {
+  border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
 }
 
-/* Table styling */
-table {
-width: 100%;
-table-layout: fixed; 
-border-collapse: collapse;
+/* Core container adjustment */
+.quarto-container {
+  /* 95vw on mobile, caps at 1400px on desktop */
+  width: 95vw !important;
+  max-width: 1400px !important;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure the content area fills that container */
+#quarto-content {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Optional: Center the main text column for better readability */
+.page-columns .content {
+  margin-left: auto;
+  margin-right: auto;
 }
