@@ -10,12 +10,16 @@ tbody td {
   border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
 }
 
-/* Prevent mobile zoom from wide tables */
-.quarto-table-container {
-overflow-x: auto;
-}
-
+/* Make tables responsive on mobile */
 table {
 width: 100%;
 max-width: 100%;
+display: block;
+overflow-x: auto;
+}
+
+/* Prevent page from expanding wider than screen */
+html, body {
+max-width: 100%;
+overflow-x: hidden;
 }
