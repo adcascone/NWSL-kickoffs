@@ -9,7 +9,7 @@ format:
     theme: lux
     css: styles.css
     toc: true
-    page-layout: full
+    page-layout: article
     include-in-header: head.html  
 
 
