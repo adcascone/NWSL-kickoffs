@@ -3,6 +3,8 @@ project:
 
 website:
   title: ""
+  sidebar: 
+    style: floating
 
 
 format:
@@ -10,7 +12,7 @@ format:
     theme: lux
     css: styles.css
     toc: true
-    page-layout: article
+    page-layout: full
     include-in-header: head.html  
 
 
