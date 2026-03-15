@@ -6,11 +6,11 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
-| Boston | NJ/NY | 12:30/**12:37 PM ET** | ABC, ESPN app, Disney+ |
-| Kansas City |Utah| 4:00/**4:07 PM ET** | ION|
-| Bay | Denver| 6:30/**6:37 PM ET** | ION|
-| North Carolina | Louisville | 7:00/**7:07 PM ET** | NWSL+|
-| San Diego| Houston| 8:45/**8:52 PM ET**|ION|
+| Boston | NJ/NY | 12:30/**12:37 PM ET** | ABC, [ESPN app](https://plus.espn.com/), Disney+ |
+| Kansas City |Utah| 4:00/**4:07 PM ET** | [ION](https://www.ionnwsl.com/)|
+| Bay | Denver| 6:30/**6:37 PM ET** | [ION](https://www.ionnwsl.com/)|
+| North Carolina | Louisville | 7:00/**7:07 PM ET** | [NWSL+](https://plus.nwslsoccer.com/)|
+| San Diego| Houston| 8:45/**8:52 PM ET**|[ION](https://www.ionnwsl.com/)|
 
 : {tbl-colwidths="[66,66,80,80]"}
 
@@ -18,8 +18,8 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
-| Orlando | Seattle | 4:00/**4:37 PM ET** | Victory+ |
-| Angel City |Chicago| 7:00/**7:07 PM ET** | Victory+|
+| Orlando | Seattle | 4:00/**4:37 PM ET** | [Victory+](https://victoryplus.com/) |
+| Angel City |Chicago| 7:00/**7:07 PM ET** | [Victory+](https://victoryplus.com/)|
 
 : {tbl-colwidths="[66,66,80,80]"}
 
@@ -27,9 +27,9 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
-| Orlando | Denver | 8:00/**8:07 PM ET** | Victory+ |
-| Louisville |Washington| 8:00/**8:07 PM ET** | Victory+|
-| Portland |Seattle| 10:00/**10:07 PM ET** | Prime Video|
+| Orlando | Denver | 8:00/**8:07 PM ET** | [Victory+](https://victoryplus.com/) |
+| Louisville |Washington| 8:00/**8:07 PM ET** | [Victory+](https://victoryplus.com/)|
+| Portland |Seattle| 10:00/**10:07 PM ET** | [Prime Video](http://www.amazon.com/nwsl)|
 
 : {tbl-colwidths="[66,66,80,80]"}
 
@@ -37,9 +37,9 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
-| Houston | Boston | 4:00/**4:07 PM ET** | ION |
-| NJ/NY |North Carolina| 6:30/**6:37 PM ET** | ION|
-| Bay |Angel City| 8:45/**8:52 PM ET** | ION|
+| Houston | Boston | 4:00/**4:07 PM ET** | [ION](https://www.ionnwsl.com/) |
+| NJ/NY |North Carolina| 6:30/**6:37 PM ET** | [ION](https://www.ionnwsl.com/)|
+| Bay |Angel City| 8:45/**8:52 PM ET** | [ION](https://www.ionnwsl.com/)|
 
 : {tbl-colwidths="[66,66,80,80]"}
 
@@ -47,9 +47,16 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
-| Chicago | Kansas City | 2:00/**2:07 PM ET** | ESPN2, ESPN app |
-| Utah Royals |San Diego| 7:00/**7:07 PM ET** | Victory+|
+| Chicago | Kansas City | 2:00/**2:07 PM ET** | [ESPN2](https://plus.espn.com/), [ESPN app](https://plus.espn.com/) |
+| Utah Royals |San Diego| 7:00/**7:07 PM ET** | [Victory+](https://victoryplus.com/)|
 
+### FAQs
+
+**What is NWSL+?**
+- NWSL+ is a digital streaming service that gives fans access to live NWSL games, match recaps, and highlights. It's a free service available online, and on the NWSL+ app on Apple TV, Fire TV, and Roku. Learn more [here](https://www.nwslsoccer.com/plus).
+
+**What is Victory+?**
+- Victory+ is the newest streaming partner of the NWSL. It's a free streaming service that allows for live game streaming and on-demand sports entertainment for free across major platforms. Access it [here](https://victoryplus.com/).
 
 : {tbl-colwidths="[66,66,80,80]"}
 
