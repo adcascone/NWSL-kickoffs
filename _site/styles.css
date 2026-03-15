@@ -9,3 +9,25 @@ thead th {
 tbody td {
   border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
 }
+
+/* Core container adjustment */
+.quarto-container {
+  /* 95vw on mobile, caps at 1400px on desktop */
+  width: 95vw !important;
+  max-width: 1400px !important;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure the content area fills that container */
+#quarto-content {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Optional: Center the main text column for better readability */
+.page-columns .content {
+  margin-left: auto;
+  margin-right: auto;
+}
