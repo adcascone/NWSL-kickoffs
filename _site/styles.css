@@ -13,7 +13,7 @@ tbody td {
 /* Core container adjustment */
 .quarto-container {
   /* 95vw on mobile, caps at 1400px on desktop */
-  width: 75vw !important;
+  width: 75svw !important;
   max-width: 1400px !important;
   
   margin-left: auto;
