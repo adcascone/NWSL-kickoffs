@@ -4,13 +4,12 @@ project:
 website:
   title: ""
 
+
 format:
   html:
     theme: lux
     css: styles.css
     toc: true
-    page-layout: article
-    include-in-header: head.html  
-
+    page-layout: article   
 
 
