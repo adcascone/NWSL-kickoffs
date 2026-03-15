@@ -11,7 +11,7 @@ format:
     css: styles.css
     toc: true
     page-layout: article
-    viewport: width=device-width, initial-scale=1   
+    include-in-header: head.html  
 
 
 
