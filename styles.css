@@ -32,3 +32,9 @@ tbody td {
   margin: 0 !important;
   padding: 0 10px; /* Adds a tiny bit of breathing room for text */
 }
+
+/* Prevents wide elements from breaking the mobile layout */
+pre, code, table {
+  max-width: 100%;
+  overflow-x: auto;
+}
