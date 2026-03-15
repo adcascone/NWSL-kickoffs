@@ -9,32 +9,3 @@ thead th {
 tbody td {
   border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
 }
-
-/* Mobile: Use almost the full width of the phone */
-.quarto-container {
-  width: 92vw !important;  /* 92% of viewport width leaves a nice gutter */
-  max-width: 100% !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Desktop: Cap the width so it doesn't stretch too far */
-@media (min-width: 992px) {
-  .quarto-container {
-    width: 100% !important;
-    max-width: 1200px !important; 
-  }
-}
-
-/* Fix for the main content area to prevent "overflow" scrolling */
-#quarto-content {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 10px; /* Adds a tiny bit of breathing room for text */
-}
-
-/* Prevents wide elements from breaking the mobile layout */
-pre, code, table {
-  max-width: 100%;
-  overflow-x: auto;
-}
