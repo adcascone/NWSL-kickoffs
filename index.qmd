@@ -83,5 +83,4 @@ This site was created by Arianna D. Cascone. If you notice any issues, please fe
 
 <br><br><br><br> [Website inspired by: <https://mlskickofftimes.com/>]{style="font-size:.5;"}.
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
