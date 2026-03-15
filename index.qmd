@@ -12,8 +12,6 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 | North Carolina | Louisville | 7:00/**7:07 PM ET** | [NWSL+](https://plus.nwslsoccer.com/)|
 | San Diego| Houston| 8:45/**8:52 PM ET**|[ION](https://www.ionnwsl.com/)|
 
-: {tbl-colwidths="[66,66,80,80]"}
-
 ### Sunday, March 15
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
@@ -21,7 +19,6 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 | Orlando | Seattle | 4:00/**4:37 PM ET** | [Victory+](https://victoryplus.com/) |
 | Angel City |Chicago| 7:00/**7:07 PM ET** | [Victory+](https://victoryplus.com/)|
 
-: {tbl-colwidths="[66,66,80,80]"}
 
 ### Friday, March 20
 
@@ -31,7 +28,6 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 | Louisville |Washington| 8:00/**8:07 PM ET** | [Victory+](https://victoryplus.com/)|
 | Portland |Seattle| 10:00/**10:07 PM ET** | [Prime Video](http://www.amazon.com/nwsl)|
 
-: {tbl-colwidths="[66,66,80,80]"}
 
 ### Saturday, March 21
 
@@ -41,7 +37,6 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 | NJ/NY |North Carolina| 6:30/**6:37 PM ET** | [ION](https://www.ionnwsl.com/)|
 | Bay |Angel City| 8:45/**8:52 PM ET** | [ION](https://www.ionnwsl.com/)|
 
-: {tbl-colwidths="[66,66,80,80]"}
 
 ### Sunday, March 22
 
@@ -50,7 +45,6 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 | Chicago | Kansas City | 2:00/**2:07 PM ET** | [ESPN2](https://plus.espn.com/), [ESPN app](https://plus.espn.com/) |
 | Utah Royals |San Diego| 7:00/**7:07 PM ET** | [Victory+](https://victoryplus.com/)|
 
-: {tbl-colwidths="[66,66,80,80]"}
 
 ### FAQs
 
