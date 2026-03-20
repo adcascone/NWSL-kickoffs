@@ -1,5 +1,5 @@
 ---
-title: "NWSL Official Kickoff Times and Streaming Info"
+title: "NWSL Kickoff Times and Streaming Info"
 ---
 
 ## March 
@@ -28,7 +28,7 @@ title: "NWSL Official Kickoff Times and Streaming Info"
 
 |**Home**|**Away**|**Announced/Actual Kickoff Time**|**Stream**|
 |--------|---------|----------------------|---------|
-| Chicago | Kansas City | 2:00/**2:07 PM ET** | [ESPN2](https://plus.espn.com/), [ESPN app](https://plus.espn.com/) |
+| Chicago | Kansas City | 2:15/**2:22 PM ET** | [ESPN2](https://plus.espn.com/), [ESPN app](https://plus.espn.com/) |
 | Utah Royals |San Diego| 7:00/**7:08 PM ET** | [Victory+](https://victoryplus.com/)|
 
 : {tbl-colwidths="[66,66,80,80]"}
