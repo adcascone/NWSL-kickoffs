@@ -20,7 +20,7 @@ title: "NWSL Kickoff Times and Streaming Info"
 |--------|---------|----------------------|---------|
 | Houston | Boston | 4:00/**4:04 PM ET** | [ION](https://www.ionnwsl.com/) |
 | NJ/NY |North Carolina| 6:30/**6:34 PM ET** | [ION](https://www.ionnwsl.com/)|
-| Bay |Angel City| 8:45/**8:59 PM ET** | [ION](https://www.ionnwsl.com/)|
+| Bay |Angel City| 8:45/**8:49 PM ET** | [ION](https://www.ionnwsl.com/)|
 
 : {tbl-colwidths="[66,66,80,80]"}
 
