@@ -3,6 +3,9 @@ project:
 
 website:
   title: ""
+  site-url: https://nationalwomenssoccerleague.com
+  resources:
+    - CNAME
 
 
 format:
