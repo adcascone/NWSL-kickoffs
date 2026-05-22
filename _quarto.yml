@@ -1,18 +1,25 @@
 project:
   type: website
+  resources:
+    - CNAME
 
 website:
   title: ""
   site-url: https://nationalwomenssoccerleague.com
-  resources:
-    - CNAME
+  navbar:
+    background: light
+    foreground: dark
+    left:
+      - text: "This Week"
+        href: index.qmd
+      - text: "Full Schedule"
+        href: schedule.qmd
 
 
 format:
   html:
     theme: lux
     css: styles.css
+    include-after-body: scripts.html
     toc: true
-    page-layout: article   
-
-
+    page-layout: article

@@ -2,45 +2,65 @@
 title: "NWSL Kickoff Times and Streaming Info"
 ---
 
+```{=html}
+<div class="mb-3 d-flex align-items-center gap-2">
+  <span class="text-muted small fw-semibold me-1">Time zone:</span>
+  <button class="btn btn-sm btn-primary tz-btn" onclick="setTZ('America/New_York', 'ET', this)">ET</button>
+  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
+  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Denver', 'MT', this)">MT</button>
+  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Los_Angeles', 'PT', this)">PT</button>
+</div>
+```
+
 ## May
-
-### Wednesday, May 20
-
-|**Home**|**Away**|**Announced/Approx. Kickoff Time**|**Stream**|
-|--------|---------|----------------------|---------|
-| Houston | San Diego | **8:00 PM ET** | [CBS Sports Network](https://www.paramountplus.com/) |
-| Angel City | Kansas City | 10:00/**10:08 PM ET** | [Victory+](https://victoryplus.com/) |
-| Portland | Bay | 10:00/**10:08 PM ET** | [Victory+](https://victoryplus.com/) |
-
-: {tbl-colwidths="[66,66,80,80]"}
 
 ### Friday, May 22
 
-|**Home**|**Away**|**Announced/Approx. Kickoff Time**|**Stream**|
-|--------|---------|----------------------|---------|
-| Boston | Seattle | 8:00/**8:10 PM ET** | [Prime Video](http://www.amazon.com/nwsl) |
-
-: {tbl-colwidths="[66,66,80,80]"}
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Boston</td><td>Seattle</td><td class="time-cell" data-announced="2026-05-23T00:00:00Z" data-approx="2026-05-23T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+</tr>
+</tbody></table>
+```
 
 ### Saturday, May 23
 
-|**Home**|**Away**|**Announced/Approx. Kickoff Time**|**Stream**|
-|--------|---------|----------------------|---------|
-| Louisville | North Carolina | 4:00/**4:04 PM ET** | [ION](https://www.ionnwsl.com/) |
-| Utah Royals | Denver | 6:30/**6:34 PM ET** | [ION](https://www.ionnwsl.com/) |
-| Houston | Angel City | 8:45/**8:49 PM ET** | [ION](https://www.ionnwsl.com/) |
-
-: {tbl-colwidths="[66,66,80,80]"}
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Louisville</td><td>North Carolina</td><td class="time-cell" data-announced="2026-05-23T20:00:00Z" data-approx="2026-05-23T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+<tr>
+  <td>Utah Royals</td><td>Denver</td><td class="time-cell" data-announced="2026-05-23T22:30:00Z" data-approx="2026-05-23T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+<tr>
+  <td>Houston</td><td>Angel City</td><td class="time-cell" data-announced="2026-05-24T00:45:00Z" data-approx="2026-05-24T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+</tbody></table>
+```
 
 ### Sunday, May 24
 
-|**Home**|**Away**|**Announced/Approx. Kickoff Time**|**Stream**|
-|--------|---------|----------------------|---------|
-| Kansas City | Portland | **1:00 PM ET** | [CBS](https://www.paramountplus.com/), [Paramount+](https://www.paramountplus.com/) |
-| Bay | Chicago | **5:00 PM ET** | [ESPN Deportes](https://plus.espn.com/), [ESPN+](https://plus.espn.com/) |
-| San Diego | Orlando | 7:00/**7:08 PM ET** | [Victory+](https://victoryplus.com/) |
-
-: {tbl-colwidths="[66,66,80,80]"}
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Kansas City</td><td>Portland</td><td class="time-cell" data-announced="2026-05-24T17:00:00Z"><strong>1:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+</tr>
+<tr>
+  <td>Bay</td><td>Chicago</td><td class="time-cell" data-announced="2026-05-24T21:00:00Z"><strong>5:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN+</a></td>
+</tr>
+<tr>
+  <td>San Diego</td><td>Orlando</td><td class="time-cell" data-announced="2026-05-24T23:00:00Z" data-approx="2026-05-24T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td><td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
+</tr>
+</tbody></table>
+```
 
 *Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late.
 
@@ -49,6 +69,10 @@ title: "NWSL Kickoff Times and Streaming Info"
 **What is NWSL+?**
 
 -   NWSL+ is a digital streaming service that gives fans access to live NWSL games, match recaps, and highlights. It's a free service available online, and on the NWSL+ app on Apple TV, Fire TV, and Roku. Learn more [here](https://www.nwslsoccer.com/plus).
+
+**Can I stream CBS games on Paramount+?**
+
+-   CBS games can be watched on your local CBS affiliate (over-the-air or via cable/satellite). Streaming on [Paramount+](https://www.paramountplus.com/) is only available on the **Paramount+ with SHOWTIME (Premium)** plan. The cheaper Paramount+ Essentials plan does not include live local CBS streams, and unlike past seasons, no matches are streaming-only on Paramount+.
 
 **What is Victory+?**
 

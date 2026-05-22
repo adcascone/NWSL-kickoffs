@@ -1,0 +1,24 @@
+<script>
+function setTZ(tz, label, btn) {
+  document.querySelectorAll('.tz-btn').forEach(b => {
+    b.classList.remove('btn-primary');
+    b.classList.add('btn-outline-secondary');
+  });
+  btn.classList.remove('btn-outline-secondary');
+  btn.classList.add('btn-primary');
+
+  const fmt = (isoStr) => new Date(isoStr).toLocaleTimeString('en-US', {
+    timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true
+  });
+
+  document.querySelectorAll('.time-cell').forEach(cell => {
+    const approx = cell.dataset.approx;
+    if (approx) {
+      const announcedHM = fmt(cell.dataset.announced).replace(/ [AP]M$/, '');
+      cell.innerHTML = `${announcedHM}/<strong>${fmt(approx)} ${label}</strong>`;
+    } else {
+      cell.innerHTML = `<strong>${fmt(cell.dataset.announced)} ${label}</strong>`;
+    }
+  });
+}
+</script>

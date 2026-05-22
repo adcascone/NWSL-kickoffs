@@ -1,5 +1,12 @@
 /* css styles */
 
+/* Thin white navbar with subtle separator */
+.navbar {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
 /* Thick border under the header */
 thead th {
   border-bottom: 2px solid black !important; /* Thick header line */
