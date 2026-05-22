@@ -89,6 +89,7 @@ TZ_TOGGLE_HTML = """\
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Denver', 'MT', this)">MT</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Los_Angeles', 'PT', this)">PT</button>
+  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('GMT', 'GMT', this)">GMT</button>
 </div>"""
 
 APPROX_NOTE = (
@@ -286,8 +287,22 @@ def write_schedule_qmd(path: str, games: list[dict]) -> None:
         for name in (short_name(g["home"]), short_name(g["away"]))
     })
 
+    # Mobile-only month jump nav (desktop uses the TOC sidebar)
+    months_seen: list[str] = []
+    for g in games:
+        m = g["et_dt"].strftime("%B")
+        if m not in months_seen:
+            months_seen.append(m)
+
+    mobile_jump = ['<div class="d-flex flex-wrap gap-1 align-items-center mb-3 d-md-none">']
+    mobile_jump.append('  <span class="text-muted small fw-semibold me-1">Jump to:</span>')
+    for month in months_seen:
+        mobile_jump.append(f'  <a href="#{month.lower()}" class="btn btn-sm btn-outline-secondary">{month}</a>')
+    mobile_jump.append('</div>')
+
     # Timezone toggle + dropdown filter
     dropdown = [
+        *mobile_jump,
         TZ_TOGGLE_HTML,
         '<div class="mb-4 d-flex align-items-center gap-2">',
         '  <label for="team-select" class="fw-semibold text-nowrap mb-0">Filter by team:</label>',

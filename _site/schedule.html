@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -40,12 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -83,7 +73,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Full Schedule</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -129,12 +118,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>*Kickoff times are approximate based on historical trends.</p>
+<div class="d-flex flex-wrap gap-1 align-items-center mb-3 d-md-none">
+  <span class="text-muted small fw-semibold me-1">Jump to:</span>
+  <a href="#march" class="btn btn-sm btn-outline-secondary">March</a>
+  <a href="#april" class="btn btn-sm btn-outline-secondary">April</a>
+  <a href="#may" class="btn btn-sm btn-outline-secondary">May</a>
+  <a href="#july" class="btn btn-sm btn-outline-secondary">July</a>
+  <a href="#august" class="btn btn-sm btn-outline-secondary">August</a>
+  <a href="#september" class="btn btn-sm btn-outline-secondary">September</a>
+  <a href="#october" class="btn btn-sm btn-outline-secondary">October</a>
+  <a href="#november" class="btn btn-sm btn-outline-secondary">November</a>
+</div>
 <div class="mb-3 d-flex align-items-center gap-2">
   <span class="text-muted small fw-semibold me-1">Time zone:</span>
   <button class="btn btn-sm btn-primary tz-btn" onclick="setTZ('America/New_York', 'ET', this)">ET</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Denver', 'MT', this)">MT</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Los_Angeles', 'PT', this)">PT</button>
+  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('GMT', 'GMT', this)">GMT</button>
 </div>
 <div class="mb-4 d-flex align-items-center gap-2">
   <label for="team-select" class="fw-semibold text-nowrap mb-0">Filter by team:</label>

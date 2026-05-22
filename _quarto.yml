@@ -6,6 +6,7 @@ project:
 website:
   title: ""
   site-url: https://nationalwomenssoccerleague.com
+  search: false
   navbar:
     background: light
     foreground: dark

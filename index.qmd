@@ -9,6 +9,7 @@ title: "NWSL Kickoff Times and Streaming Info"
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Denver', 'MT', this)">MT</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Los_Angeles', 'PT', this)">PT</button>
+  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('GMT', 'GMT', this)">GMT</button>
 </div>
 ```
 
