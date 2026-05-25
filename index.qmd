@@ -15,50 +15,53 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ## May
 
-### Friday, May 22
+### Friday, May 29
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Boston</td><td>Seattle</td><td class="time-cell" data-announced="2026-05-23T00:00:00Z" data-approx="2026-05-23T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+  <td>Orlando</td><td>Bay</td><td class="time-cell" data-announced="2026-05-29T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
+</tr>
+<tr>
+  <td>Louisville</td><td>Denver</td><td class="time-cell" data-announced="2026-05-30T00:00:00Z" data-approx="2026-05-30T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody></table>
 ```
 
-### Saturday, May 23
+### Saturday, May 30
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Louisville</td><td>North Carolina</td><td class="time-cell" data-announced="2026-05-23T20:00:00Z" data-approx="2026-05-23T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+  <td>Kansas City</td><td>Boston</td><td class="time-cell" data-announced="2026-05-30T17:30:00Z" data-approx="2026-05-30T17:34:00Z">1:30/<strong>1:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr>
-  <td>Utah Royals</td><td>Denver</td><td class="time-cell" data-announced="2026-05-23T22:30:00Z" data-approx="2026-05-23T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+  <td>Portland</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-05-30T20:00:00Z" data-approx="2026-05-30T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr>
-  <td>Houston</td><td>Angel City</td><td class="time-cell" data-announced="2026-05-24T00:45:00Z" data-approx="2026-05-24T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+  <td>Washington</td><td>Seattle</td><td class="time-cell" data-announced="2026-05-30T22:30:00Z" data-approx="2026-05-30T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody></table>
 ```
 
-### Sunday, May 24
+### Sunday, May 31
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Kansas City</td><td>Portland</td><td class="time-cell" data-announced="2026-05-24T17:00:00Z"><strong>1:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+  <td>Chicago</td><td>San Diego</td><td class="time-cell" data-announced="2026-05-31T17:00:00Z"><strong>1:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
 </tr>
 <tr>
-  <td>Bay</td><td>Chicago</td><td class="time-cell" data-announced="2026-05-24T21:00:00Z"><strong>5:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN+</a></td>
+  <td>NJ/NY</td><td>Houston</td><td class="time-cell" data-announced="2026-05-31T19:00:00Z"><strong>3:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN+</a>, <a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
 </tr>
 <tr>
-  <td>San Diego</td><td>Orlando</td><td class="time-cell" data-announced="2026-05-24T23:00:00Z" data-approx="2026-05-24T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td><td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
+  <td>Angel City</td><td>North Carolina</td><td class="time-cell" data-announced="2026-05-31T23:00:00Z" data-approx="2026-05-31T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td><td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody></table>
 ```
