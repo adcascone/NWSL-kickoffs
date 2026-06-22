@@ -13,22 +13,22 @@ title: "NWSL Kickoff Times and Streaming Info"
 </div>
 ```
 
-## May
+## July
 
-### Sunday, May 31
+### Friday, July 3
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Chicago</td><td>San Diego</td><td class="time-cell" data-announced="2026-05-31T17:00:00Z"><strong>1:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
+  <td>Washington</td><td>Houston</td><td class="time-cell" data-announced="2026-07-04T00:00:00Z" data-approx="2026-07-04T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td><td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr>
-  <td>NJ/NY</td><td>Houston</td><td class="time-cell" data-announced="2026-05-31T19:00:00Z"><strong>3:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN+</a>, <a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
+  <td>Denver</td><td>Kansas City</td><td class="time-cell" data-announced="2026-07-04T01:30:00Z"><strong>9:30 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
 </tr>
 <tr>
-  <td>Angel City</td><td>North Carolina</td><td class="time-cell" data-announced="2026-05-31T23:00:00Z" data-approx="2026-05-31T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td><td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
+  <td>Angel City</td><td>Orlando</td><td class="time-cell" data-announced="2026-07-04T02:00:00Z" data-approx="2026-07-04T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody></table>
 ```
