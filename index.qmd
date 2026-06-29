@@ -33,6 +33,39 @@ title: "NWSL Kickoff Times and Streaming Info"
 </tbody></table>
 ```
 
+### Saturday, July 4
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>North Carolina</td><td>Seattle</td><td class="time-cell" data-announced="2026-07-04T22:30:00Z" data-approx="2026-07-04T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+<tr>
+  <td>San Diego</td><td>NJ/NY</td><td class="time-cell" data-announced="2026-07-05T00:45:00Z" data-approx="2026-07-05T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+</tbody></table>
+```
+
+### Sunday, July 5
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Boston</td><td>Bay</td><td class="time-cell" data-announced="2026-07-05T16:00:00Z"><strong>12:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, ESPN Unlmtd</td>
+</tr>
+<tr>
+  <td>Chicago</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-07-05T21:00:00Z"><strong>5:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
+</tr>
+<tr>
+  <td>Portland</td><td>Louisville</td><td class="time-cell" data-announced="2026-07-05T23:00:00Z" data-approx="2026-07-05T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td><td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
+</tr>
+</tbody></table>
+```
+
 *Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late.
 
 ## FAQs
