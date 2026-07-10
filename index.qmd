@@ -66,6 +66,33 @@ title: "NWSL Kickoff Times and Streaming Info"
 </tbody></table>
 ```
 
+### Wednesday, July 15
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Orlando</td><td>Boston</td><td class="time-cell" data-announced="2026-07-15T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
+</tr>
+<tr>
+  <td>NJ/NY</td><td>Washington</td><td class="time-cell" data-announced="2026-07-16T00:00:00Z"><strong>8:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a></td>
+</tr>
+</tbody></table>
+```
+
+### Friday, July 17
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Kansas City</td><td>San Diego</td><td class="time-cell" data-announced="2026-07-18T00:00:00Z" data-approx="2026-07-18T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+</tr>
+</tbody></table>
+```
+
 *Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late.
 
 ## FAQs
