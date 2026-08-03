@@ -15,24 +15,6 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ## August
 
-### Sunday, August 2
-
-```{=html}
-<table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
-<tbody>
-<tr>
-  <td>Washington</td><td>San Diego</td><td class="time-cell" data-announced="2026-08-02T20:00:00Z"><strong>4:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
-</tr>
-<tr>
-  <td>Utah Royals</td><td>Portland</td><td class="time-cell" data-announced="2026-08-02T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
-</tr>
-<tr>
-  <td>Denver</td><td>Boston</td><td class="time-cell" data-announced="2026-08-03T01:00:00Z"><strong>9:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a></td>
-</tr>
-</tbody></table>
-```
-
 ### Wednesday, August 5
 
 ```{=html}
