@@ -15,42 +15,6 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ## August
 
-### Saturday, August 8
-
-```{=html}
-<table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
-<tbody>
-<tr>
-  <td>Washington</td><td>North Carolina</td><td class="time-cell" data-announced="2026-08-08T22:30:00Z" data-approx="2026-08-08T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
-</tr>
-<tr>
-  <td>Houston</td><td>Kansas City</td><td class="time-cell" data-announced="2026-08-09T00:45:00Z" data-approx="2026-08-09T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
-</tr>
-<tr>
-  <td>Denver</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-08-09T02:00:00Z" data-approx="2026-08-09T02:04:00Z">10:00/<strong>10:04 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
-</tr>
-</tbody></table>
-```
-
-### Sunday, August 9
-
-```{=html}
-<table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
-<tbody>
-<tr>
-  <td>Boston</td><td>Portland</td><td class="time-cell" data-announced="2026-08-09T20:00:00Z"><strong>4:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
-</tr>
-<tr>
-  <td>Chicago</td><td>Bay</td><td class="time-cell" data-announced="2026-08-09T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
-</tr>
-<tr>
-  <td>Seattle</td><td>Angel City</td><td class="time-cell" data-announced="2026-08-10T01:00:00Z"><strong>9:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a></td>
-</tr>
-</tbody></table>
-```
-
 ### Friday, August 14
 
 ```{=html}
@@ -83,6 +47,21 @@ title: "NWSL Kickoff Times and Streaming Info"
 </tr>
 <tr>
   <td>Portland</td><td>Orlando</td><td class="time-cell" data-announced="2026-08-16T00:45:00Z" data-approx="2026-08-16T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+</tbody></table>
+```
+
+### Sunday, August 16
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>North Carolina</td><td>Houston</td><td class="time-cell" data-announced="2026-08-16T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
+</tr>
+<tr>
+  <td>Angel City</td><td>Washington</td><td class="time-cell" data-announced="2026-08-17T01:00:00Z"><strong>9:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a></td>
 </tr>
 </tbody></table>
 ```
