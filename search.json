@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site was created by Arianna D. Cascone (ariannacascone4@gmail.com). If you notice any issues, please feel free to send me an email or file an issue on GitHub.\nAlso, connect with me on BlueSky at @casconearianna.bsky.social."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "NWSL Kickoff Times and Streaming Info",
@@ -7,18 +14,11 @@
     "text": "Time zone:\n  ET\n  CT\n  MT\n  PT\n  GMT"
   },
   {
-    "objectID": "index.html#august",
-    "href": "index.html#august",
-    "title": "NWSL Kickoff Times and Streaming Info",
-    "section": "August",
-    "text": "August\n\nMonday, August 31\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nBoston\nAngel City\n8:00 PM ET\nCBS Sports Network"
-  },
-  {
     "objectID": "index.html#september",
     "href": "index.html#september",
     "title": "NWSL Kickoff Times and Streaming Info",
     "section": "September",
-    "text": "September\n\nFriday, September 4\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nUtah Royals\nBoston\n9:30 PM ET\nNWSL+\n\n\nBay\nKansas City\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, September 5\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nAngel City\n6:30/6:34 PM ET\nION\n\n\n\n\n\nSunday, September 6\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nDenver\nNJ/NY\n2:00 PM ET\nCBS, Paramount+\n\n\nChicago\nNorth Carolina\n4:00 PM ET\nCBS Sports Network\n\n\nPortland\nWashington\n4:00 PM ET\nCBS, Paramount+\n\n\nOrlando\nHouston\n7:00 PM ET\nRoku\n\n\nSeattle\nSan Diego\n9:00 PM ET\nESPN2, ESPN Unlmtd\n\n\n\n*Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late."
+    "text": "September\n\nFriday, September 11\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nNJ/NY\n6:30 PM ET\nNWSL+\n\n\nKansas City\nOrlando\n8:00/8:10 PM ET\nPrime Video\n\n\nAngel City\nDenver\n10:00/10:04 PM ET\nION\n\n\n\n\n\nSaturday, September 12\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nNorth Carolina\n6:30/6:34 PM ET\nION\n\n\nSeattle\nBay\n8:00 PM ET\nNWSL+\n\n\nHouston\nUtah Royals\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 13\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nWashington\nBoston\n1:00 PM ET\nESPN, ESPN Unlmtd\n\n\nPortland\nChicago\n7:00 PM ET\nRoku\n\n\n\n*Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late."
   },
   {
     "objectID": "index.html#faqs",
@@ -74,7 +74,7 @@
     "href": "schedule.html#september",
     "title": "2026 NWSL Full Schedule",
     "section": "September",
-    "text": "September\nFriday, September 4\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nUtah Royals\nBoston\n9:30 PM ET\nNWSL+\n\n\nBay\nKansas City\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, September 5\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nAngel City\n6:30/6:34 PM ET\nION\n\n\n\n\n\nSunday, September 6\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nDenver\nNJ/NY\n2:00 PM ET\nCBS, Paramount+\n\n\nChicago\nNorth Carolina\n4:00 PM ET\nCBS Sports Network\n\n\nPortland\nWashington\n4:00 PM ET\nCBS, Paramount+\n\n\nOrlando\nHouston\n7:00 PM ET\nRoku\n\n\nSeattle\nSan Diego\n9:00 PM ET\nESPN2, ESPN Unlmtd\n\n\n\n\n\nFriday, September 11\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nNJ/NY\n6:30 PM ET\nNWSL+\n\n\nKansas City\nOrlando\n8:00/8:10 PM ET\nPrime Video\n\n\nAngel City\nDenver\n10:00 PM ET\nNWSL+\n\n\n\n\n\nSaturday, September 12\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nNorth Carolina\n6:30/6:34 PM ET\nION\n\n\nSeattle\nBay\n8:00 PM ET\nNWSL+\n\n\nHouston\nUtah Royals\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 13\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nWashington\nBoston\n1:00 PM ET\nESPN, ESPN Unlmtd\n\n\nPortland\nChicago\n7:00 PM ET\nRoku\n\n\n\n\n\nWednesday, September 16\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nDenver\nBay\n9:30 PM ET\nNWSL+\n\n\nAngel City\nSeattle\n10:00 PM ET\nNWSL+\n\n\n\n\n\nFriday, September 18\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nKansas City\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, September 19\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nOrlando\nPortland\n4:00/4:04 PM ET\nION\n\n\nNorth Carolina\nNJ/NY\n6:30/6:34 PM ET\nION\n\n\nDenver\nSeattle\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 20\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nBoston\nHouston\n2:00 PM ET\nCBS Sports Network\n\n\nChicago\nWashington\n5:00 PM ET\nESPN, ESPN Deportes\n\n\nBay\nLouisville\n7:00 PM ET\nRoku\n\n\nUtah Royals\nAngel City\n7:00 PM ET\nNWSL+\n\n\n\n\n\nFriday, September 25\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nSan Diego\n6:30 PM ET\nNWSL+\n\n\nNJ/NY\nChicago\n8:00/8:10 PM ET\nPrime Video\n\n\nSeattle\nBoston\n8:30 PM ET\nNWSL+\n\n\n\n\n\nSaturday, September 26\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nKansas City\nDenver\n12:30 PM ET\nCBS, Paramount+\n\n\nWashington\nAngel City\n6:30/6:34 PM ET\nION\n\n\nPortland\nHouston\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 27\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nBay\nOrlando\n5:00 PM ET\nESPN\n\n\nUtah Royals\nNorth Carolina\n7:00 PM ET\nRoku"
+    "text": "September\nFriday, September 4\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nUtah Royals\nBoston\n9:30 PM ET\nNWSL+\n\n\nBay\nKansas City\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, September 5\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nAngel City\n6:30/6:34 PM ET\nION\n\n\n\n\n\nSunday, September 6\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nDenver\nNJ/NY\n2:00 PM ET\nCBS, Paramount+\n\n\nChicago\nNorth Carolina\n4:00 PM ET\nCBS Sports Network\n\n\nPortland\nWashington\n4:00 PM ET\nCBS, Paramount+\n\n\nOrlando\nHouston\n8:30 PM ET\nRoku\n\n\nSeattle\nSan Diego\n9:00 PM ET\nESPN2, ESPN Unlmtd\n\n\n\n\n\nFriday, September 11\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nNJ/NY\n6:30 PM ET\nNWSL+\n\n\nKansas City\nOrlando\n8:00/8:10 PM ET\nPrime Video\n\n\nAngel City\nDenver\n10:00/10:04 PM ET\nION\n\n\n\n\n\nSaturday, September 12\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nNorth Carolina\n6:30/6:34 PM ET\nION\n\n\nSeattle\nBay\n8:00 PM ET\nNWSL+\n\n\nHouston\nUtah Royals\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 13\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nWashington\nBoston\n1:00 PM ET\nESPN, ESPN Unlmtd\n\n\nPortland\nChicago\n7:00 PM ET\nRoku\n\n\n\n\n\nWednesday, September 16\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nDenver\nBay\n9:30 PM ET\nNWSL+\n\n\nAngel City\nSeattle\n10:00 PM ET\nNWSL+\n\n\n\n\n\nFriday, September 18\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nKansas City\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, September 19\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nOrlando\nPortland\n4:00/4:04 PM ET\nION\n\n\nNorth Carolina\nNJ/NY\n6:30/6:34 PM ET\nION\n\n\nDenver\nSeattle\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 20\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nBoston\nHouston\n2:00 PM ET\nCBS Sports Network\n\n\nChicago\nWashington\n5:00 PM ET\nESPN, ESPN Deportes\n\n\nBay\nLouisville\n7:00 PM ET\nRoku\n\n\nUtah Royals\nAngel City\n7:00 PM ET\nNWSL+\n\n\n\n\n\nFriday, September 25\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nLouisville\nSan Diego\n6:30 PM ET\nNWSL+\n\n\nNJ/NY\nChicago\n8:00/8:10 PM ET\nPrime Video\n\n\nSeattle\nBoston\n8:30 PM ET\nNWSL+\n\n\n\n\n\nSaturday, September 26\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nKansas City\nDenver\n12:30 PM ET\nCBS, Paramount+\n\n\nWashington\nAngel City\n6:30/6:34 PM ET\nION\n\n\nPortland\nHouston\n8:45/8:49 PM ET\nION\n\n\n\n\n\nSunday, September 27\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nBay\nOrlando\n5:00 PM ET\nESPN\n\n\nUtah Royals\nNorth Carolina\n7:00 PM ET\nRoku"
   },
   {
     "objectID": "schedule.html#october",
@@ -89,12 +89,5 @@
     "title": "2026 NWSL Full Schedule",
     "section": "November",
     "text": "November\nSunday, November 1\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nAngel City\nBoston\n5:00 PM ET\nTBD\n\n\nBay\nSan Diego\n5:00 PM ET\nTBD\n\n\nNJ/NY\nUtah Royals\n5:00 PM ET\nTBD\n\n\nHouston\nPortland\n5:00 PM ET\nTBD\n\n\nNorth Carolina\nDenver\n5:00 PM ET\nTBD\n\n\nLouisville\nKansas City\n5:00 PM ET\nTBD\n\n\nSeattle\nOrlando\n5:00 PM ET\nTBD\n\n\nWashington\nChicago\n5:00 PM ET\nTBD"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This site was created by Arianna D. Cascone (ariannacascone4@gmail.com). If you notice any issues, please feel free to send me an email or file an issue on GitHub.\nAlso, connect with me on BlueSky at @casconearianna.bsky.social."
   }
 ]
