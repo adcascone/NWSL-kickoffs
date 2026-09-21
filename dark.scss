@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+
+// Dark palette layered on top of Lux, so fonts and spacing match the light theme
+$body-bg: #121212;
+$body-color: #c9cdd1;
+$headings-color: #f1f1f1;
+$border-color: #333;
+
+// Lux's primary is near-black; flip it so the selected time zone button stays visible
+$primary: #e9ecef;
+
+// Lighter grays so the unselected time zone buttons and muted labels stay readable
+$secondary: #adb5bd;
+$text-muted: #9aa0a6;
+
+$navbar-bg: #181818;
+$navbar-fg: #c9cdd1;
+
+// Team filter dropdown on the Full Schedule page
+$input-bg: #2a2a2a;
+$input-color: #e0e0e0;
+$input-border-color: #444;
+$form-select-indicator-color: #c9cdd1;
+
+/*-- scss:rules --*/
+
+// Lux hardcodes outline-secondary buttons to a mid gray that's too dim on a dark background
+.btn-outline-secondary {
+  color: $secondary;
+  border-color: $secondary;
+}
