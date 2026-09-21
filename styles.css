@@ -1,20 +1,33 @@
 /* css styles */
 
+/* Border colors, swapped when the dark mode toggle is on */
+:root {
+  --nav-border: #e0e0e0;
+  --thead-border: black;
+  --row-border: #b1b0b0;
+}
+
+body.quarto-dark {
+  --nav-border: #333;
+  --thead-border: #e0e0e0;
+  --row-border: #444;
+}
+
 /* Thin white navbar with subtle separator */
 .navbar {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--nav-border);
 }
 
 /* Thick border under the header */
 thead th {
-  border-bottom: 2px solid black !important; /* Thick header line */
+  border-bottom: 2px solid var(--thead-border) !important; /* Thick header line */
 }
 
 /* Thin lines between each row */
 tbody td {
-  border-bottom: 2.25px solid #b1b0b0; /* Thin row line */
+  border-bottom: 2.25px solid var(--row-border); /* Thin row line */
 }
 
 /* Core container adjustment */

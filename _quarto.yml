@@ -8,8 +8,6 @@ website:
   site-url: https://nationalwomenssoccerleague.com
   search: false
   navbar:
-    background: light
-    foreground: dark
     left:
       - text: "This Week"
         href: index.qmd
@@ -19,7 +17,9 @@ website:
 
 format:
   html:
-    theme: lux
+    theme:
+      light: [lux, light.scss]
+      dark: [lux, dark.scss]
     css: styles.css
     include-after-body: scripts.html
     toc: true
