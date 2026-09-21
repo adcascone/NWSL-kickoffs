@@ -78,6 +78,12 @@ SHORT_NAMES: dict[str, str] = {
     "Washington Spirit":      "Washington",
 }
 
+# Corrections where ESPN's broadcast data is wrong, keyed by ESPN event id
+NETWORK_OVERRIDES: dict[str, list[str]] = {
+    # Aug 30, 2026 Houston at Seattle: first Roku Sports Channel match per the NWSL; ESPN lists NWSL+
+    "401853989": ["Roku"],
+}
+
 # ── END CONFIGURE ─────────────────────────────────────────────────────────────
 
 ET = ZoneInfo("America/New_York")
@@ -151,6 +157,7 @@ def parse_game(event: dict) -> dict | None:
             if name and name not in seen:
                 networks.append(name)
                 seen.add(name)
+        networks = NETWORK_OVERRIDES.get(event.get("id", ""), networks)
         return {
             "home":     home["team"]["displayName"],
             "away":     away["team"]["displayName"],
