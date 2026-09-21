@@ -310,15 +310,15 @@ ul.task-list li input[type="checkbox"] {
   <a href="#october" class="btn btn-sm btn-outline-secondary">October</a>
   <a href="#november" class="btn btn-sm btn-outline-secondary">November</a>
 </div>
-<div class="mb-3 d-flex align-items-center gap-2">
+<div class="tz-toggle mb-3 d-flex flex-wrap align-items-center gap-2">
   <span class="text-muted small fw-semibold me-1">Time zone:</span>
-  <button class="btn btn-sm btn-primary tz-btn" onclick="setTZ('America/New_York', 'ET', this)">ET</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Denver', 'MT', this)">MT</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Los_Angeles', 'PT', this)">PT</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('GMT', 'GMT', this)">GMT</button>
+  <button type="button" class="btn btn-sm btn-primary tz-btn" data-tz="ET" aria-pressed="true">ET</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="CT" aria-pressed="false">CT</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="MT" aria-pressed="false">MT</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="PT" aria-pressed="false">PT</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="GMT" aria-pressed="false">GMT</button>
 </div>
-<div class="mb-4 d-flex align-items-center gap-2">
+<div class="mb-4 d-flex flex-wrap align-items-center gap-2">
   <label for="team-select" class="fw-semibold text-nowrap mb-0">Filter by team:</label>
   <select id="team-select" class="form-select" style="max-width: 220px;" onchange="filterTeam(this.value)">
     <option value="all">All Teams</option>
@@ -350,7 +350,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -358,7 +358,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Washington" data-away="Portland">
 <td>Washington</td>
 <td>Portland</td>
-<td class="time-cell" data-announced="2026-03-14T00:00:00Z" data-approx="2026-03-14T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-14T00:00:00Z" data-approx="2026-03-14T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -372,7 +372,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -386,13 +386,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Kansas City" data-away="Utah Royals">
 <td>Kansas City</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-03-14T20:00:00Z" data-approx="2026-03-14T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-14T20:00:00Z" data-approx="2026-03-14T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Bay" data-away="Denver">
 <td>Bay</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-03-14T22:30:00Z" data-approx="2026-03-14T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-14T22:30:00Z" data-approx="2026-03-14T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="North Carolina" data-away="Louisville">
@@ -404,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="San Diego" data-away="Houston">
 <td>San Diego</td>
 <td>Houston</td>
-<td class="time-cell" data-announced="2026-03-15T00:45:00Z" data-approx="2026-03-15T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-15T00:45:00Z" data-approx="2026-03-15T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -418,7 +418,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -426,13 +426,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Orlando" data-away="Seattle">
 <td>Orlando</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-03-15T20:00:00Z" data-approx="2026-03-15T20:08:00Z">4:00/<strong>4:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-15T20:00:00Z" data-approx="2026-03-15T20:08:00Z">4:00/<wbr><strong>4:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Angel City" data-away="Chicago">
 <td>Angel City</td>
 <td>Chicago</td>
-<td class="time-cell" data-announced="2026-03-15T23:00:00Z" data-approx="2026-03-15T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-15T23:00:00Z" data-approx="2026-03-15T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -446,7 +446,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -454,19 +454,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Orlando" data-away="Denver">
 <td>Orlando</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-03-21T00:00:00Z" data-approx="2026-03-21T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-21T00:00:00Z" data-approx="2026-03-21T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Louisville" data-away="Washington">
 <td>Louisville</td>
 <td>Washington</td>
-<td class="time-cell" data-announced="2026-03-21T00:00:00Z" data-approx="2026-03-21T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-21T00:00:00Z" data-approx="2026-03-21T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Portland" data-away="Seattle">
 <td>Portland</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-03-21T02:00:00Z" data-approx="2026-03-21T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-21T02:00:00Z" data-approx="2026-03-21T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -480,7 +480,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -488,19 +488,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Houston" data-away="Boston">
 <td>Houston</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-03-21T20:00:00Z" data-approx="2026-03-21T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-21T20:00:00Z" data-approx="2026-03-21T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="NJ/NY" data-away="North Carolina">
 <td>NJ/NY</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-03-21T22:30:00Z" data-approx="2026-03-21T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-21T22:30:00Z" data-approx="2026-03-21T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Bay" data-away="Angel City">
 <td>Bay</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-03-22T00:45:00Z" data-approx="2026-03-22T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-22T00:45:00Z" data-approx="2026-03-22T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -514,7 +514,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -528,7 +528,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Utah Royals" data-away="San Diego">
 <td>Utah Royals</td>
 <td>San Diego</td>
-<td class="time-cell" data-announced="2026-03-22T23:00:00Z" data-approx="2026-03-22T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-22T23:00:00Z" data-approx="2026-03-22T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -542,7 +542,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -550,19 +550,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="NJ/NY" data-away="Denver">
 <td>NJ/NY</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-03-25T23:00:00Z" data-approx="2026-03-25T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-25T23:00:00Z" data-approx="2026-03-25T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Washington" data-away="Utah Royals">
 <td>Washington</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-03-25T23:00:00Z" data-approx="2026-03-25T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-25T23:00:00Z" data-approx="2026-03-25T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Chicago" data-away="Orlando">
 <td>Chicago</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-03-26T00:00:00Z" data-approx="2026-03-26T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-26T00:00:00Z" data-approx="2026-03-26T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Seattle" data-away="Kansas City">
@@ -588,7 +588,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -596,7 +596,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Angel City" data-away="Houston">
 <td>Angel City</td>
 <td>Houston</td>
-<td class="time-cell" data-announced="2026-03-28T02:00:00Z" data-approx="2026-03-28T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-28T02:00:00Z" data-approx="2026-03-28T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -610,7 +610,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -625,18 +625,18 @@ ul.task-list li input[type="checkbox"] {
 <td>Denver</td>
 <td>Washington</td>
 <td class="time-cell" data-announced="2026-03-28T18:00:00Z"><strong>2:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Portland" data-away="Kansas City">
 <td>Portland</td>
 <td>Kansas City</td>
 <td class="time-cell" data-announced="2026-03-28T20:00:00Z"><strong>4:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Seattle" data-away="Louisville">
 <td>Seattle</td>
 <td>Louisville</td>
-<td class="time-cell" data-announced="2026-03-28T22:30:00Z" data-approx="2026-03-28T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-28T22:30:00Z" data-approx="2026-03-28T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="North Carolina" data-away="Bay">
@@ -648,7 +648,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="San Diego" data-away="Chicago">
 <td>San Diego</td>
 <td>Chicago</td>
-<td class="time-cell" data-announced="2026-03-29T00:45:00Z" data-approx="2026-03-29T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-29T00:45:00Z" data-approx="2026-03-29T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -662,7 +662,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -670,7 +670,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="NJ/NY" data-away="Orlando">
 <td>NJ/NY</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-03-29T23:00:00Z" data-approx="2026-03-29T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-03-29T23:00:00Z" data-approx="2026-03-29T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -687,7 +687,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -701,7 +701,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Orlando" data-away="Angel City">
 <td>Orlando</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-04-04T00:00:00Z" data-approx="2026-04-04T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-04T00:00:00Z" data-approx="2026-04-04T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row odd" data-home="Houston" data-away="Louisville">
@@ -727,7 +727,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -736,18 +736,18 @@ ul.task-list li input[type="checkbox"] {
 <td>Kansas City</td>
 <td>NJ/NY</td>
 <td class="time-cell" data-announced="2026-04-04T20:00:00Z"><strong>4:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="North Carolina" data-away="Portland">
 <td>North Carolina</td>
 <td>Portland</td>
-<td class="time-cell" data-announced="2026-04-04T22:30:00Z" data-approx="2026-04-04T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-04T22:30:00Z" data-approx="2026-04-04T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Seattle" data-away="Denver">
 <td>Seattle</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-04-05T00:45:00Z" data-approx="2026-04-05T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-05T00:45:00Z" data-approx="2026-04-05T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -761,7 +761,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -783,7 +783,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -791,13 +791,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Louisville" data-away="Orlando">
 <td>Louisville</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-04-24T21:30:00Z" data-approx="2026-04-24T21:38:00Z">5:30/<strong>5:38 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-24T21:30:00Z" data-approx="2026-04-24T21:38:00Z">5:30/<wbr><strong>5:38 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Washington" data-away="Kansas City">
 <td>Washington</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-04-25T00:00:00Z" data-approx="2026-04-25T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-25T00:00:00Z" data-approx="2026-04-25T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -811,7 +811,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -820,12 +820,12 @@ ul.task-list li input[type="checkbox"] {
 <td>NJ/NY</td>
 <td>Bay</td>
 <td class="time-cell" data-announced="2026-04-25T17:00:00Z"><strong>1:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Chicago" data-away="Boston">
 <td>Chicago</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-04-25T22:30:00Z" data-approx="2026-04-25T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-25T22:30:00Z" data-approx="2026-04-25T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Houston" data-away="North Carolina">
@@ -837,7 +837,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Denver" data-away="San Diego">
 <td>Denver</td>
 <td>San Diego</td>
-<td class="time-cell" data-announced="2026-04-26T00:45:00Z" data-approx="2026-04-26T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-26T00:45:00Z" data-approx="2026-04-26T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -851,7 +851,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -865,7 +865,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Seattle" data-away="Utah Royals">
 <td>Seattle</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-04-27T00:00:00Z" data-approx="2026-04-27T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-27T00:00:00Z" data-approx="2026-04-27T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -879,7 +879,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -887,19 +887,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Boston" data-away="North Carolina">
 <td>Boston</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-04-29T23:00:00Z" data-approx="2026-04-29T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-29T23:00:00Z" data-approx="2026-04-29T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Washington" data-away="Louisville">
 <td>Washington</td>
 <td>Louisville</td>
-<td class="time-cell" data-announced="2026-04-29T23:00:00Z" data-approx="2026-04-29T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-29T23:00:00Z" data-approx="2026-04-29T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Chicago" data-away="NJ/NY">
 <td>Chicago</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-04-30T00:00:00Z" data-approx="2026-04-30T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-04-30T00:00:00Z" data-approx="2026-04-30T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Portland" data-away="San Diego">
@@ -922,7 +922,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -930,7 +930,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Houston" data-away="Seattle">
 <td>Houston</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-05-02T00:00:00Z" data-approx="2026-05-02T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-02T00:00:00Z" data-approx="2026-05-02T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -944,7 +944,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -952,19 +952,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Orlando" data-away="Washington">
 <td>Orlando</td>
 <td>Washington</td>
-<td class="time-cell" data-announced="2026-05-02T20:00:00Z" data-approx="2026-05-02T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-02T20:00:00Z" data-approx="2026-05-02T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="North Carolina" data-away="Kansas City">
 <td>North Carolina</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-05-02T22:30:00Z" data-approx="2026-05-02T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-02T22:30:00Z" data-approx="2026-05-02T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Angel City" data-away="Utah Royals">
 <td>Angel City</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-05-03T00:45:00Z" data-approx="2026-05-03T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-03T00:45:00Z" data-approx="2026-05-03T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -978,7 +978,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1004,7 +1004,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="San Diego" data-away="Bay">
 <td>San Diego</td>
 <td>Bay</td>
-<td class="time-cell" data-announced="2026-05-03T23:00:00Z" data-approx="2026-05-03T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-03T23:00:00Z" data-approx="2026-05-03T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1018,7 +1018,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1040,7 +1040,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1054,7 +1054,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Orlando" data-away="North Carolina">
 <td>Orlando</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-05-09T00:00:00Z" data-approx="2026-05-09T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-09T00:00:00Z" data-approx="2026-05-09T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1068,7 +1068,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1076,7 +1076,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="NJ/NY" data-away="Boston">
 <td>NJ/NY</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-05-09T22:30:00Z" data-approx="2026-05-09T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-09T22:30:00Z" data-approx="2026-05-09T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Houston" data-away="Denver">
@@ -1088,7 +1088,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Angel City" data-away="San Diego">
 <td>Angel City</td>
 <td>San Diego</td>
-<td class="time-cell" data-announced="2026-05-10T00:45:00Z" data-approx="2026-05-10T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-10T00:45:00Z" data-approx="2026-05-10T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1102,7 +1102,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1116,13 +1116,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Bay" data-away="Utah Royals">
 <td>Bay</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-05-10T20:00:00Z" data-approx="2026-05-10T20:08:00Z">4:00/<strong>4:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-10T20:00:00Z" data-approx="2026-05-10T20:08:00Z">4:00/<wbr><strong>4:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Seattle" data-away="Washington">
 <td>Seattle</td>
 <td>Washington</td>
-<td class="time-cell" data-announced="2026-05-10T23:00:00Z" data-approx="2026-05-10T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-10T23:00:00Z" data-approx="2026-05-10T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1136,7 +1136,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1144,7 +1144,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Boston" data-away="Orlando">
 <td>Boston</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-05-12T23:00:00Z" data-approx="2026-05-12T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-12T23:00:00Z" data-approx="2026-05-12T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1158,7 +1158,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1166,25 +1166,25 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Kansas City" data-away="Houston">
 <td>Kansas City</td>
 <td>Houston</td>
-<td class="time-cell" data-announced="2026-05-16T00:00:00Z" data-approx="2026-05-16T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-16T00:00:00Z" data-approx="2026-05-16T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row even" data-home="Bay" data-away="Boston">
 <td>Bay</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-05-16T02:00:00Z" data-approx="2026-05-16T02:08:00Z">10:00/<strong>10:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-16T02:00:00Z" data-approx="2026-05-16T02:08:00Z">10:00/<wbr><strong>10:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="San Diego" data-away="Washington">
 <td>San Diego</td>
 <td>Washington</td>
-<td class="time-cell" data-announced="2026-05-16T02:00:00Z" data-approx="2026-05-16T02:08:00Z">10:00/<strong>10:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-16T02:00:00Z" data-approx="2026-05-16T02:08:00Z">10:00/<wbr><strong>10:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Seattle" data-away="NJ/NY">
 <td>Seattle</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-05-16T02:00:00Z" data-approx="2026-05-16T02:08:00Z">10:00/<strong>10:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-16T02:00:00Z" data-approx="2026-05-16T02:08:00Z">10:00/<wbr><strong>10:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1198,7 +1198,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1206,13 +1206,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="North Carolina" data-away="Chicago">
 <td>North Carolina</td>
 <td>Chicago</td>
-<td class="time-cell" data-announced="2026-05-16T22:30:00Z" data-approx="2026-05-16T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-16T22:30:00Z" data-approx="2026-05-16T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Denver" data-away="Orlando">
 <td>Denver</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-05-17T00:45:00Z" data-approx="2026-05-17T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-17T00:45:00Z" data-approx="2026-05-17T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1226,7 +1226,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1240,7 +1240,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Utah Royals" data-away="Louisville">
 <td>Utah Royals</td>
 <td>Louisville</td>
-<td class="time-cell" data-announced="2026-05-18T00:00:00Z" data-approx="2026-05-18T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-18T00:00:00Z" data-approx="2026-05-18T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1254,7 +1254,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1268,13 +1268,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Angel City" data-away="Kansas City">
 <td>Angel City</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-05-21T02:00:00Z" data-approx="2026-05-21T02:08:00Z">10:00/<strong>10:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-21T02:00:00Z" data-approx="2026-05-21T02:08:00Z">10:00/<wbr><strong>10:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Portland" data-away="Bay">
 <td>Portland</td>
 <td>Bay</td>
-<td class="time-cell" data-announced="2026-05-21T02:00:00Z" data-approx="2026-05-21T02:08:00Z">10:00/<strong>10:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-21T02:00:00Z" data-approx="2026-05-21T02:08:00Z">10:00/<wbr><strong>10:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1288,7 +1288,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1296,7 +1296,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Boston" data-away="Seattle">
 <td>Boston</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-05-23T00:00:00Z" data-approx="2026-05-23T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-23T00:00:00Z" data-approx="2026-05-23T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1310,7 +1310,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1318,19 +1318,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Louisville" data-away="North Carolina">
 <td>Louisville</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-05-23T20:00:00Z" data-approx="2026-05-23T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-23T20:00:00Z" data-approx="2026-05-23T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Utah Royals" data-away="Denver">
 <td>Utah Royals</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-05-23T22:30:00Z" data-approx="2026-05-23T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-23T22:30:00Z" data-approx="2026-05-23T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Houston" data-away="Angel City">
 <td>Houston</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-05-24T00:45:00Z" data-approx="2026-05-24T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-24T00:45:00Z" data-approx="2026-05-24T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1344,7 +1344,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1353,7 +1353,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Kansas City</td>
 <td>Portland</td>
 <td class="time-cell" data-announced="2026-05-24T17:00:00Z"><strong>1:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Bay" data-away="Chicago">
 <td>Bay</td>
@@ -1364,7 +1364,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="San Diego" data-away="Orlando">
 <td>San Diego</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-05-24T23:00:00Z" data-approx="2026-05-24T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-24T23:00:00Z" data-approx="2026-05-24T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1378,7 +1378,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1392,7 +1392,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Louisville" data-away="Denver">
 <td>Louisville</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-05-30T00:00:00Z" data-approx="2026-05-30T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-30T00:00:00Z" data-approx="2026-05-30T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1406,7 +1406,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1414,19 +1414,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Kansas City" data-away="Boston">
 <td>Kansas City</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-05-30T17:30:00Z" data-approx="2026-05-30T17:34:00Z">1:30/<strong>1:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-30T17:30:00Z" data-approx="2026-05-30T17:34:00Z">1:30/<wbr><strong>1:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Portland" data-away="Utah Royals">
 <td>Portland</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-05-30T20:00:00Z" data-approx="2026-05-30T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-30T20:00:00Z" data-approx="2026-05-30T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Washington" data-away="Seattle">
 <td>Washington</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-05-30T22:30:00Z" data-approx="2026-05-30T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-30T22:30:00Z" data-approx="2026-05-30T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1440,7 +1440,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1460,7 +1460,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Angel City" data-away="North Carolina">
 <td>Angel City</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-05-31T23:00:00Z" data-approx="2026-05-31T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-05-31T23:00:00Z" data-approx="2026-05-31T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1477,7 +1477,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1485,7 +1485,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Washington" data-away="Houston">
 <td>Washington</td>
 <td>Houston</td>
-<td class="time-cell" data-announced="2026-07-04T00:00:00Z" data-approx="2026-07-04T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-04T00:00:00Z" data-approx="2026-07-04T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Denver" data-away="Kansas City">
@@ -1497,7 +1497,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Angel City" data-away="Orlando">
 <td>Angel City</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-07-04T02:00:00Z" data-approx="2026-07-04T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-04T02:00:00Z" data-approx="2026-07-04T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1511,7 +1511,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1519,13 +1519,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="North Carolina" data-away="Seattle">
 <td>North Carolina</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-07-04T23:30:00Z" data-approx="2026-07-04T23:34:00Z">7:30/<strong>7:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-04T23:30:00Z" data-approx="2026-07-04T23:34:00Z">7:30/<wbr><strong>7:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="San Diego" data-away="NJ/NY">
 <td>San Diego</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-07-05T00:45:00Z" data-approx="2026-07-05T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-05T00:45:00Z" data-approx="2026-07-05T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1539,7 +1539,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1559,7 +1559,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Portland" data-away="Louisville">
 <td>Portland</td>
 <td>Louisville</td>
-<td class="time-cell" data-announced="2026-07-05T23:00:00Z" data-approx="2026-07-05T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-05T23:00:00Z" data-approx="2026-07-05T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1573,7 +1573,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1593,13 +1593,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Orlando" data-away="Kansas City">
 <td>Orlando</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-07-11T01:03:00Z" data-approx="2026-07-11T01:13:00Z">9:03/<strong>9:13 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-11T01:03:00Z" data-approx="2026-07-11T01:13:00Z">9:03/<wbr><strong>9:13 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row even" data-home="Utah Royals" data-away="NJ/NY">
 <td>Utah Royals</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-07-11T02:00:00Z" data-approx="2026-07-11T02:08:00Z">10:00/<strong>10:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-11T02:00:00Z" data-approx="2026-07-11T02:08:00Z">10:00/<wbr><strong>10:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1613,7 +1613,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1621,13 +1621,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="North Carolina" data-away="Washington">
 <td>North Carolina</td>
 <td>Washington</td>
-<td class="time-cell" data-announced="2026-07-11T22:30:00Z" data-approx="2026-07-11T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-11T22:30:00Z" data-approx="2026-07-11T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="San Diego" data-away="Angel City">
 <td>San Diego</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-07-12T00:45:00Z" data-approx="2026-07-12T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-12T00:45:00Z" data-approx="2026-07-12T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1641,7 +1641,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1655,7 +1655,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Denver" data-away="Houston">
 <td>Denver</td>
 <td>Houston</td>
-<td class="time-cell" data-announced="2026-07-12T23:00:00Z" data-approx="2026-07-12T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-12T23:00:00Z" data-approx="2026-07-12T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1669,7 +1669,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1697,7 +1697,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1705,7 +1705,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Kansas City" data-away="San Diego">
 <td>Kansas City</td>
 <td>San Diego</td>
-<td class="time-cell" data-announced="2026-07-18T00:00:00Z" data-approx="2026-07-18T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-18T00:00:00Z" data-approx="2026-07-18T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1719,7 +1719,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1728,7 +1728,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Denver</td>
 <td>Portland</td>
 <td class="time-cell" data-announced="2026-07-18T18:15:00Z"><strong>2:15 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="NJ/NY" data-away="Seattle">
 <td>NJ/NY</td>
@@ -1740,18 +1740,18 @@ ul.task-list li input[type="checkbox"] {
 <td>Bay</td>
 <td>North Carolina</td>
 <td class="time-cell" data-announced="2026-07-18T20:00:00Z"><strong>4:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Chicago" data-away="Angel City">
 <td>Chicago</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-07-18T22:30:00Z" data-approx="2026-07-18T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-18T22:30:00Z" data-approx="2026-07-18T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Utah Royals" data-away="Orlando">
 <td>Utah Royals</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-07-19T00:45:00Z" data-approx="2026-07-19T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-19T00:45:00Z" data-approx="2026-07-19T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Louisville" data-away="Houston">
@@ -1771,7 +1771,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1779,7 +1779,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Boston" data-away="Washington">
 <td>Boston</td>
 <td>Washington</td>
-<td class="time-cell" data-announced="2026-07-19T23:00:00Z" data-approx="2026-07-19T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-19T23:00:00Z" data-approx="2026-07-19T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 </tbody>
@@ -1793,7 +1793,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1801,19 +1801,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Houston" data-away="Bay">
 <td>Houston</td>
 <td>Bay</td>
-<td class="time-cell" data-announced="2026-07-25T00:00:00Z" data-approx="2026-07-25T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-25T00:00:00Z" data-approx="2026-07-25T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row even" data-home="Orlando" data-away="Chicago">
 <td>Orlando</td>
 <td>Chicago</td>
-<td class="time-cell" data-announced="2026-07-25T00:00:00Z" data-approx="2026-07-25T00:08:00Z">8:00/<strong>8:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-25T00:00:00Z" data-approx="2026-07-25T00:08:00Z">8:00/<wbr><strong>8:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Portland" data-away="NJ/NY">
 <td>Portland</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-07-25T02:00:00Z" data-approx="2026-07-25T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-25T02:00:00Z" data-approx="2026-07-25T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1827,7 +1827,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1835,13 +1835,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Boston" data-away="Kansas City">
 <td>Boston</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-07-25T21:00:00Z" data-approx="2026-07-25T21:04:00Z">5:00/<strong>5:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-25T21:00:00Z" data-approx="2026-07-25T21:04:00Z">5:00/<wbr><strong>5:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="North Carolina" data-away="Utah Royals">
 <td>North Carolina</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-07-25T23:45:00Z" data-approx="2026-07-25T23:49:00Z">7:45/<strong>7:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-25T23:45:00Z" data-approx="2026-07-25T23:49:00Z">7:45/<wbr><strong>7:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1855,7 +1855,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1869,7 +1869,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Washington" data-away="Denver">
 <td>Washington</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-07-26T23:00:00Z" data-approx="2026-07-26T23:08:00Z">7:00/<strong>7:08 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-07-26T23:00:00Z" data-approx="2026-07-26T23:08:00Z">7:00/<wbr><strong>7:08 PM ET</strong></td>
 <td><a href="https://victoryplus.com/" target="_blank" rel="noopener">Victory+</a></td>
 </tr>
 <tr class="game-row odd" data-home="Angel City" data-away="Louisville">
@@ -1889,7 +1889,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1923,7 +1923,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1931,7 +1931,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="North Carolina" data-away="Orlando">
 <td>North Carolina</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-08-01T00:00:00Z" data-approx="2026-08-01T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-01T00:00:00Z" data-approx="2026-08-01T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -1948,7 +1948,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -1962,7 +1962,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Kansas City" data-away="Angel City">
 <td>Kansas City</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-08-01T22:30:00Z" data-approx="2026-08-01T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-01T22:30:00Z" data-approx="2026-08-01T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Houston" data-away="NJ/NY">
@@ -1974,7 +1974,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Bay" data-away="Seattle">
 <td>Bay</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-08-02T00:45:00Z" data-approx="2026-08-02T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-02T00:45:00Z" data-approx="2026-08-02T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -1988,7 +1988,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2022,7 +2022,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2044,7 +2044,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2058,7 +2058,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="NJ/NY" data-away="San Diego">
 <td>NJ/NY</td>
 <td>San Diego</td>
-<td class="time-cell" data-announced="2026-08-08T00:25:00Z" data-approx="2026-08-08T00:35:00Z">8:25/<strong>8:35 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-08T00:25:00Z" data-approx="2026-08-08T00:35:00Z">8:25/<wbr><strong>8:35 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -2072,7 +2072,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2080,19 +2080,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Washington" data-away="North Carolina">
 <td>Washington</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-08-08T22:30:00Z" data-approx="2026-08-08T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-08T22:30:00Z" data-approx="2026-08-08T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Houston" data-away="Kansas City">
 <td>Houston</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-08-09T00:45:00Z" data-approx="2026-08-09T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-09T00:45:00Z" data-approx="2026-08-09T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Denver" data-away="Utah Royals">
 <td>Denver</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-08-09T02:00:00Z" data-approx="2026-08-09T02:04:00Z">10:00/<strong>10:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-09T02:00:00Z" data-approx="2026-08-09T02:04:00Z">10:00/<wbr><strong>10:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2106,7 +2106,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2140,7 +2140,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2148,7 +2148,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="NJ/NY" data-away="Kansas City">
 <td>NJ/NY</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-08-15T00:00:00Z" data-approx="2026-08-15T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-15T00:00:00Z" data-approx="2026-08-15T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row even" data-home="San Diego" data-away="Denver">
@@ -2180,7 +2180,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2188,13 +2188,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Louisville" data-away="Boston">
 <td>Louisville</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-08-15T22:30:00Z" data-approx="2026-08-15T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-15T22:30:00Z" data-approx="2026-08-15T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Portland" data-away="Orlando">
 <td>Portland</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-08-16T00:45:00Z" data-approx="2026-08-16T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-16T00:45:00Z" data-approx="2026-08-16T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2208,7 +2208,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2236,7 +2236,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2264,7 +2264,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2272,7 +2272,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="San Diego" data-away="Utah Royals">
 <td>San Diego</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-08-22T02:00:00Z" data-approx="2026-08-22T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-22T02:00:00Z" data-approx="2026-08-22T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -2286,7 +2286,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2294,7 +2294,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Kansas City" data-away="Seattle">
 <td>Kansas City</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-08-22T22:30:00Z" data-approx="2026-08-22T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-22T22:30:00Z" data-approx="2026-08-22T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="North Carolina" data-away="Boston">
@@ -2306,7 +2306,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Portland" data-away="Denver">
 <td>Portland</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-08-23T00:45:00Z" data-approx="2026-08-23T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-23T00:45:00Z" data-approx="2026-08-23T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2320,7 +2320,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2346,7 +2346,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Angel City" data-away="NJ/NY">
 <td>Angel City</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-08-24T00:00:00Z" data-approx="2026-08-24T00:04:00Z">8:00/<strong>8:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-24T00:00:00Z" data-approx="2026-08-24T00:04:00Z">8:00/<wbr><strong>8:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2360,7 +2360,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2382,7 +2382,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2390,7 +2390,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="NJ/NY" data-away="Portland">
 <td>NJ/NY</td>
 <td>Portland</td>
-<td class="time-cell" data-announced="2026-08-29T00:00:00Z" data-approx="2026-08-29T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-29T00:00:00Z" data-approx="2026-08-29T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row even" data-home="San Diego" data-away="Louisville">
@@ -2410,7 +2410,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2418,7 +2418,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Kansas City" data-away="North Carolina">
 <td>Kansas City</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-08-29T22:30:00Z" data-approx="2026-08-29T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-29T22:30:00Z" data-approx="2026-08-29T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Orlando" data-away="Utah Royals">
@@ -2430,7 +2430,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Denver" data-away="Chicago">
 <td>Denver</td>
 <td>Chicago</td>
-<td class="time-cell" data-announced="2026-08-30T00:55:00Z" data-approx="2026-08-30T00:59:00Z">8:55/<strong>8:59 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-08-30T00:55:00Z" data-approx="2026-08-30T00:59:00Z">8:55/<wbr><strong>8:59 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2444,7 +2444,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2472,7 +2472,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2497,7 +2497,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2511,7 +2511,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Bay" data-away="Kansas City">
 <td>Bay</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-09-05T02:00:00Z" data-approx="2026-09-05T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-05T02:00:00Z" data-approx="2026-09-05T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -2525,7 +2525,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2533,7 +2533,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Louisville" data-away="Angel City">
 <td>Louisville</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-09-05T22:30:00Z" data-approx="2026-09-05T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-05T22:30:00Z" data-approx="2026-09-05T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2547,7 +2547,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2556,7 +2556,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Denver</td>
 <td>NJ/NY</td>
 <td class="time-cell" data-announced="2026-09-06T18:00:00Z"><strong>2:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Chicago" data-away="North Carolina">
 <td>Chicago</td>
@@ -2568,7 +2568,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Portland</td>
 <td>Washington</td>
 <td class="time-cell" data-announced="2026-09-06T20:00:00Z"><strong>4:00 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Orlando" data-away="Houston">
 <td>Orlando</td>
@@ -2593,7 +2593,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2607,13 +2607,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Kansas City" data-away="Orlando">
 <td>Kansas City</td>
 <td>Orlando</td>
-<td class="time-cell" data-announced="2026-09-12T00:00:00Z" data-approx="2026-09-12T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-12T00:00:00Z" data-approx="2026-09-12T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row odd" data-home="Angel City" data-away="Denver">
 <td>Angel City</td>
 <td>Denver</td>
-<td class="time-cell" data-announced="2026-09-12T02:00:00Z" data-approx="2026-09-12T02:04:00Z">10:00/<strong>10:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-12T02:00:00Z" data-approx="2026-09-12T02:04:00Z">10:00/<wbr><strong>10:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2627,7 +2627,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2635,7 +2635,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="San Diego" data-away="North Carolina">
 <td>San Diego</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-09-12T22:30:00Z" data-approx="2026-09-12T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-12T22:30:00Z" data-approx="2026-09-12T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Seattle" data-away="Bay">
@@ -2647,7 +2647,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Houston" data-away="Utah Royals">
 <td>Houston</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-09-13T00:45:00Z" data-approx="2026-09-13T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-13T00:45:00Z" data-approx="2026-09-13T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2661,7 +2661,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2689,7 +2689,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2717,7 +2717,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2725,7 +2725,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="San Diego" data-away="Kansas City">
 <td>San Diego</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-09-19T02:00:00Z" data-approx="2026-09-19T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-19T02:00:00Z" data-approx="2026-09-19T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -2739,7 +2739,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2747,19 +2747,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Orlando" data-away="Portland">
 <td>Orlando</td>
 <td>Portland</td>
-<td class="time-cell" data-announced="2026-09-19T20:00:00Z" data-approx="2026-09-19T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-19T20:00:00Z" data-approx="2026-09-19T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="North Carolina" data-away="NJ/NY">
 <td>North Carolina</td>
 <td>NJ/NY</td>
-<td class="time-cell" data-announced="2026-09-19T22:30:00Z" data-approx="2026-09-19T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-19T22:30:00Z" data-approx="2026-09-19T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Denver" data-away="Seattle">
 <td>Denver</td>
 <td>Seattle</td>
-<td class="time-cell" data-announced="2026-09-20T00:45:00Z" data-approx="2026-09-20T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-20T00:45:00Z" data-approx="2026-09-20T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2773,7 +2773,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2813,7 +2813,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2827,7 +2827,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="NJ/NY" data-away="Chicago">
 <td>NJ/NY</td>
 <td>Chicago</td>
-<td class="time-cell" data-announced="2026-09-26T00:00:00Z" data-approx="2026-09-26T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-26T00:00:00Z" data-approx="2026-09-26T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row odd" data-home="Seattle" data-away="Boston">
@@ -2847,7 +2847,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2856,18 +2856,18 @@ ul.task-list li input[type="checkbox"] {
 <td>Kansas City</td>
 <td>Denver</td>
 <td class="time-cell" data-announced="2026-09-26T16:30:00Z"><strong>12:30 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Washington" data-away="Angel City">
 <td>Washington</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-09-26T22:30:00Z" data-approx="2026-09-26T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-26T22:30:00Z" data-approx="2026-09-26T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Portland" data-away="Houston">
 <td>Portland</td>
 <td>Houston</td>
-<td class="time-cell" data-announced="2026-09-27T00:45:00Z" data-approx="2026-09-27T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-09-27T00:45:00Z" data-approx="2026-09-27T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2881,7 +2881,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2912,7 +2912,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2920,7 +2920,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Orlando" data-away="San Diego">
 <td>Orlando</td>
 <td>San Diego</td>
-<td class="time-cell" data-announced="2026-10-03T00:00:00Z" data-approx="2026-10-03T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-03T00:00:00Z" data-approx="2026-10-03T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr class="game-row even" data-home="Seattle" data-away="North Carolina">
@@ -2940,7 +2940,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -2948,19 +2948,19 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Louisville" data-away="Utah Royals">
 <td>Louisville</td>
 <td>Utah Royals</td>
-<td class="time-cell" data-announced="2026-10-03T20:00:00Z" data-approx="2026-10-03T20:04:00Z">4:00/<strong>4:04 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-03T20:00:00Z" data-approx="2026-10-03T20:04:00Z">4:00/<wbr><strong>4:04 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Kansas City" data-away="Bay">
 <td>Kansas City</td>
 <td>Bay</td>
-<td class="time-cell" data-announced="2026-10-03T22:30:00Z" data-approx="2026-10-03T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-03T22:30:00Z" data-approx="2026-10-03T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="Portland" data-away="Boston">
 <td>Portland</td>
 <td>Boston</td>
-<td class="time-cell" data-announced="2026-10-04T00:45:00Z" data-approx="2026-10-04T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-04T00:45:00Z" data-approx="2026-10-04T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -2974,7 +2974,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3008,7 +3008,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3016,7 +3016,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Boston" data-away="Louisville">
 <td>Boston</td>
 <td>Louisville</td>
-<td class="time-cell" data-announced="2026-10-17T00:00:00Z" data-approx="2026-10-17T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-17T00:00:00Z" data-approx="2026-10-17T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -3030,7 +3030,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3039,12 +3039,12 @@ ul.task-list li input[type="checkbox"] {
 <td>Washington</td>
 <td>NJ/NY</td>
 <td class="time-cell" data-announced="2026-10-17T16:30:00Z"><strong>12:30 PM ET</strong></td>
-<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+<td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para­mount+</a></td>
 </tr>
 <tr class="game-row even" data-home="Utah Royals" data-away="Kansas City">
 <td>Utah Royals</td>
 <td>Kansas City</td>
-<td class="time-cell" data-announced="2026-10-17T22:30:00Z" data-approx="2026-10-17T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-17T22:30:00Z" data-approx="2026-10-17T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row odd" data-home="North Carolina" data-away="San Diego">
@@ -3056,7 +3056,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row even" data-home="Denver" data-away="Angel City">
 <td>Denver</td>
 <td>Angel City</td>
-<td class="time-cell" data-announced="2026-10-18T00:45:00Z" data-approx="2026-10-18T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-18T00:45:00Z" data-approx="2026-10-18T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -3070,7 +3070,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3104,7 +3104,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3124,7 +3124,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Portland" data-away="North Carolina">
 <td>Portland</td>
 <td>North Carolina</td>
-<td class="time-cell" data-announced="2026-10-24T02:00:00Z" data-approx="2026-10-24T02:10:00Z">10:00/<strong>10:10 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-24T02:00:00Z" data-approx="2026-10-24T02:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td>
 <td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 </tbody>
@@ -3138,7 +3138,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3146,13 +3146,13 @@ ul.task-list li input[type="checkbox"] {
 <tr class="game-row odd" data-home="Denver" data-away="Louisville">
 <td>Denver</td>
 <td>Louisville</td>
-<td class="time-cell" data-announced="2026-10-24T22:30:00Z" data-approx="2026-10-24T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-24T22:30:00Z" data-approx="2026-10-24T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr class="game-row even" data-home="Angel City" data-away="Bay">
 <td>Angel City</td>
 <td>Bay</td>
-<td class="time-cell" data-announced="2026-10-25T00:45:00Z" data-approx="2026-10-25T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td>
+<td class="time-cell" data-announced="2026-10-25T00:45:00Z" data-approx="2026-10-25T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td>
 <td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody>
@@ -3166,7 +3166,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3203,7 +3203,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="header">
 <th data-quarto-table-cell-role="th">Home</th>
 <th data-quarto-table-cell-role="th">Away</th>
-<th data-quarto-table-cell-role="th">Announced/Approx. Kickoff Time</th>
+<th data-quarto-table-cell-role="th">Announced/<wbr>Approx. Kickoff Time</th>
 <th data-quarto-table-cell-role="th">Stream</th>
 </tr>
 </thead>
@@ -3289,13 +3289,26 @@ function filterTeam(team) {
 
 </main> <!-- /main -->
 <script>
-function setTZ(tz, label, btn) {
+// Time zone buttons (data-tz) → IANA zone. ET is the default and needs no URL param.
+const TIME_ZONES = {
+  ET:  'America/New_York',
+  CT:  'America/Chicago',
+  MT:  'America/Denver',
+  PT:  'America/Los_Angeles',
+  GMT: 'GMT',
+};
+const DEFAULT_TZ = 'ET';
+const TZ_PARAM = 'tz';
+
+function setTZ(label) {
+  const tz = TIME_ZONES[label];
+
   document.querySelectorAll('.tz-btn').forEach(b => {
-    b.classList.remove('btn-primary');
-    b.classList.add('btn-outline-secondary');
+    const active = b.dataset.tz === label;
+    b.classList.toggle('btn-primary', active);
+    b.classList.toggle('btn-outline-secondary', !active);
+    b.setAttribute('aria-pressed', active);
   });
-  btn.classList.remove('btn-outline-secondary');
-  btn.classList.add('btn-primary');
 
   const fmt = (isoStr) => new Date(isoStr).toLocaleTimeString('en-US', {
     timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true
@@ -3305,12 +3318,34 @@ function setTZ(tz, label, btn) {
     const approx = cell.dataset.approx;
     if (approx) {
       const announcedHM = fmt(cell.dataset.announced).replace(/ [AP]M$/, '');
-      cell.innerHTML = `${announcedHM}/<strong>${fmt(approx)} ${label}</strong>`;
+      cell.innerHTML = `${announcedHM}/<wbr><strong>${fmt(approx)} ${label}</strong>`;
     } else {
       cell.innerHTML = `<strong>${fmt(cell.dataset.announced)} ${label}</strong>`;
     }
   });
+
+  // Reflect the choice in this page's URL (so it can be bookmarked or shared)
+  // and in every link within the site (so it carries over when navigating, and
+  // in-page anchors still match the current URL instead of triggering a reload).
+  const withTZ = (href) => {
+    const url = new URL(href, location.href);
+    if (label === DEFAULT_TZ) url.searchParams.delete(TZ_PARAM);
+    else url.searchParams.set(TZ_PARAM, label);
+    return url;
+  };
+  history.replaceState(null, '', withTZ(location.href));
+  document.querySelectorAll('a[href]').forEach(a => {
+    if (new URL(a.href).origin === location.origin) a.href = withTZ(a.href);
+  });
 }
+
+document.querySelectorAll('.tz-btn').forEach(btn => {
+  btn.addEventListener('click', () => setTZ(btn.dataset.tz));
+});
+
+// Apply ?tz=PT (any case) on load; ignore unknown values
+const requested = (new URLSearchParams(location.search).get(TZ_PARAM) || '').toUpperCase();
+if (Object.hasOwn(TIME_ZONES, requested) && requested !== DEFAULT_TZ) setTZ(requested);
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

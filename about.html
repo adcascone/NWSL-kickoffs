@@ -303,13 +303,26 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
-function setTZ(tz, label, btn) {
+// Time zone buttons (data-tz) → IANA zone. ET is the default and needs no URL param.
+const TIME_ZONES = {
+  ET:  'America/New_York',
+  CT:  'America/Chicago',
+  MT:  'America/Denver',
+  PT:  'America/Los_Angeles',
+  GMT: 'GMT',
+};
+const DEFAULT_TZ = 'ET';
+const TZ_PARAM = 'tz';
+
+function setTZ(label) {
+  const tz = TIME_ZONES[label];
+
   document.querySelectorAll('.tz-btn').forEach(b => {
-    b.classList.remove('btn-primary');
-    b.classList.add('btn-outline-secondary');
+    const active = b.dataset.tz === label;
+    b.classList.toggle('btn-primary', active);
+    b.classList.toggle('btn-outline-secondary', !active);
+    b.setAttribute('aria-pressed', active);
   });
-  btn.classList.remove('btn-outline-secondary');
-  btn.classList.add('btn-primary');
 
   const fmt = (isoStr) => new Date(isoStr).toLocaleTimeString('en-US', {
     timeZone: tz, hour: 'numeric', minute: '2-digit', hour12: true
@@ -319,12 +332,34 @@ function setTZ(tz, label, btn) {
     const approx = cell.dataset.approx;
     if (approx) {
       const announcedHM = fmt(cell.dataset.announced).replace(/ [AP]M$/, '');
-      cell.innerHTML = `${announcedHM}/<strong>${fmt(approx)} ${label}</strong>`;
+      cell.innerHTML = `${announcedHM}/<wbr><strong>${fmt(approx)} ${label}</strong>`;
     } else {
       cell.innerHTML = `<strong>${fmt(cell.dataset.announced)} ${label}</strong>`;
     }
   });
+
+  // Reflect the choice in this page's URL (so it can be bookmarked or shared)
+  // and in every link within the site (so it carries over when navigating, and
+  // in-page anchors still match the current URL instead of triggering a reload).
+  const withTZ = (href) => {
+    const url = new URL(href, location.href);
+    if (label === DEFAULT_TZ) url.searchParams.delete(TZ_PARAM);
+    else url.searchParams.set(TZ_PARAM, label);
+    return url;
+  };
+  history.replaceState(null, '', withTZ(location.href));
+  document.querySelectorAll('a[href]').forEach(a => {
+    if (new URL(a.href).origin === location.origin) a.href = withTZ(a.href);
+  });
 }
+
+document.querySelectorAll('.tz-btn').forEach(btn => {
+  btn.addEventListener('click', () => setTZ(btn.dataset.tz));
+});
+
+// Apply ?tz=PT (any case) on load; ignore unknown values
+const requested = (new URLSearchParams(location.search).get(TZ_PARAM) || '').toUpperCase();
+if (Object.hasOwn(TIME_ZONES, requested) && requested !== DEFAULT_TZ) setTZ(requested);
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
