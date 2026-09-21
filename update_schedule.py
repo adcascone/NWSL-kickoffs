@@ -37,6 +37,7 @@ STREAM_LINKS: dict[str, str] = {
     "ABC":             "[ABC](https://plus.espn.com/)",
     "Prime Video":     "[Prime Video](http://www.amazon.com/nwsl)",
     "NWSL+":           "[NWSL+](https://www.nwslsoccer.com/plus)",
+    "Roku":            "[Roku Sports Channel](https://therokuchannel.roku.com/)",
 }
 
 NETWORK_BUFFERS: dict[str, int] = {
@@ -53,6 +54,7 @@ NETWORK_BUFFERS: dict[str, int] = {
     "ABC":           0,
     "Prime Video":   10,
     "NWSL+":         0,
+    "Roku":          0,
 }
 
 SHORT_NAMES: dict[str, str] = {
