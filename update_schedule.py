@@ -101,13 +101,33 @@ APPROX_NOTE = (
 # ── FETCH ─────────────────────────────────────────────────────────────────────
 
 def fetch_games(start: date, end: date) -> list[dict]:
-    params = {
-        "dates": f"{start.strftime('%Y%m%d')}-{end.strftime('%Y%m%d')}",
-        "limit": 300,
-    }
-    resp = requests.get(ESPN_URL, params=params, timeout=10)
-    resp.raise_for_status()
-    events = resp.json().get("events", [])
+    # ESPN no longer accepts YYYYMMDD-YYYYMMDD ranges (400), but YYYYMM works.
+    # Fetch each month in range (plus the next, since ESPN buckets by UTC date)
+    # and filter to [start, end] by ET date.
+    def next_month(y: int, m: int) -> tuple[int, int]:
+        return (y + 1, 1) if m == 12 else (y, m + 1)
+
+    months = []
+    y, m = start.year, start.month
+    last = next_month(end.year, end.month)
+    while (y, m) <= last:
+        months.append(f"{y}{m:02d}")
+        y, m = next_month(y, m)
+
+    seen: dict[str, dict] = {}
+    for month in months:
+        resp = requests.get(ESPN_URL, params={"dates": month, "limit": 300}, timeout=10)
+        resp.raise_for_status()
+        for e in resp.json().get("events", []):
+            seen.setdefault(e["id"], e)
+
+    def et_date(e: dict) -> date:
+        return datetime.fromisoformat(e["date"].replace("Z", "+00:00")).astimezone(ET).date()
+
+    events = sorted(
+        (e for e in seen.values() if start <= et_date(e) <= end),
+        key=lambda e: e["date"],
+    )
     if not events:
         resp2 = requests.get(ESPN_URL, params={"limit": 50}, timeout=10)
         resp2.raise_for_status()
