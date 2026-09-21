@@ -37,6 +37,7 @@ STREAM_LINKS: dict[str, str] = {
     "ABC":             "[ABC](https://plus.espn.com/)",
     "Prime Video":     "[Prime Video](http://www.amazon.com/nwsl)",
     "NWSL+":           "[NWSL+](https://www.nwslsoccer.com/plus)",
+    "Roku":            "[Roku Sports Channel](https://therokuchannel.roku.com/)",
 }
 
 NETWORK_BUFFERS: dict[str, int] = {
@@ -53,6 +54,7 @@ NETWORK_BUFFERS: dict[str, int] = {
     "ABC":           0,
     "Prime Video":   10,
     "NWSL+":         0,
+    "Roku":          0,
 }
 
 SHORT_NAMES: dict[str, str] = {
@@ -74,6 +76,12 @@ SHORT_NAMES: dict[str, str] = {
     "OL Reign":               "Seattle",
     "Utah Royals FC":         "Utah Royals",
     "Washington Spirit":      "Washington",
+}
+
+# Corrections where ESPN's broadcast data is wrong, keyed by ESPN event id
+NETWORK_OVERRIDES: dict[str, list[str]] = {
+    # Aug 30, 2026 Houston at Seattle: first Roku Sports Channel match per the NWSL; ESPN lists NWSL+
+    "401853989": ["Roku"],
 }
 
 # ── END CONFIGURE ─────────────────────────────────────────────────────────────
@@ -149,6 +157,7 @@ def parse_game(event: dict) -> dict | None:
             if name and name not in seen:
                 networks.append(name)
                 seen.add(name)
+        networks = NETWORK_OVERRIDES.get(event.get("id", ""), networks)
         return {
             "home":     home["team"]["displayName"],
             "away":     away["team"]["displayName"],
