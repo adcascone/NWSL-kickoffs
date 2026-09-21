@@ -85,11 +85,11 @@ MD_LINK = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 TZ_TOGGLE_HTML = """\
 <div class="mb-3 d-flex align-items-center gap-2">
   <span class="text-muted small fw-semibold me-1">Time zone:</span>
-  <button class="btn btn-sm btn-primary tz-btn" onclick="setTZ('America/New_York', 'ET', this)">ET</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Denver', 'MT', this)">MT</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Los_Angeles', 'PT', this)">PT</button>
-  <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('GMT', 'GMT', this)">GMT</button>
+  <button type="button" class="btn btn-sm btn-primary tz-btn" data-tz="ET" aria-pressed="true">ET</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="CT" aria-pressed="false">CT</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="MT" aria-pressed="false">MT</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="PT" aria-pressed="false">PT</button>
+  <button type="button" class="btn btn-sm btn-outline-secondary tz-btn" data-tz="GMT" aria-pressed="false">GMT</button>
 </div>"""
 
 APPROX_NOTE = (
