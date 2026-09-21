@@ -51,3 +51,49 @@ tbody td {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Phones: fit schedule tables and controls to the screen instead of scrolling sideways */
+@media (max-width: 575.98px) {
+  main .table {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+  }
+
+  main .table th {
+    font-size: 0.6rem;
+    letter-spacing: 0;
+  }
+
+  main .table > :not(caption) > * > * {
+    padding: 0.5rem 0.3rem;
+  }
+
+  /* Quarto lets links break mid-word ("Victory" / "+"); wrap network names at spaces only */
+  main .table td a {
+    word-break: normal;
+  }
+
+  main .btn-sm {
+    padding: 0.35rem 0.65rem;
+  }
+
+  /* "Time zone:" on its own line so all five buttons fit on the next */
+  .tz-toggle > span {
+    flex-basis: 100%;
+  }
+}
+
+/* Narrower phones (e.g. 320-360px): a little smaller still */
+@media (max-width: 374.98px) {
+  main .table {
+    font-size: 0.7rem;
+  }
+
+  main .table th {
+    font-size: 0.55rem;
+  }
+
+  main .table > :not(caption) > * > * {
+    padding: 0.45rem 0.15rem;
+  }
+}

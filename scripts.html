@@ -15,7 +15,7 @@ function setTZ(tz, label, btn) {
     const approx = cell.dataset.approx;
     if (approx) {
       const announcedHM = fmt(cell.dataset.announced).replace(/ [AP]M$/, '');
-      cell.innerHTML = `${announcedHM}/<strong>${fmt(approx)} ${label}</strong>`;
+      cell.innerHTML = `${announcedHM}/<wbr><strong>${fmt(approx)} ${label}</strong>`;
     } else {
       cell.innerHTML = `<strong>${fmt(cell.dataset.announced)} ${label}</strong>`;
     }

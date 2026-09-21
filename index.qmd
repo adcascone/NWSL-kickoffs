@@ -3,7 +3,7 @@ title: "NWSL Kickoff Times and Streaming Info"
 ---
 
 ```{=html}
-<div class="mb-3 d-flex align-items-center gap-2">
+<div class="tz-toggle mb-3 d-flex flex-wrap align-items-center gap-2">
   <span class="text-muted small fw-semibold me-1">Time zone:</span>
   <button class="btn btn-sm btn-primary tz-btn" onclick="setTZ('America/New_York', 'ET', this)">ET</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
@@ -19,13 +19,13 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ```{=html}
 <table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
   <td>Louisville</td><td>San Diego</td><td class="time-cell" data-announced="2026-09-25T22:30:00Z"><strong>6:30 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
 </tr>
 <tr>
-  <td>NJ/NY</td><td>Chicago</td><td class="time-cell" data-announced="2026-09-26T00:00:00Z" data-approx="2026-09-26T00:10:00Z">8:00/<strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+  <td>NJ/NY</td><td>Chicago</td><td class="time-cell" data-announced="2026-09-26T00:00:00Z" data-approx="2026-09-26T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
 </tr>
 <tr>
   <td>Seattle</td><td>Boston</td><td class="time-cell" data-announced="2026-09-26T00:30:00Z"><strong>8:30 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
@@ -37,16 +37,16 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ```{=html}
 <table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Kansas City</td><td>Denver</td><td class="time-cell" data-announced="2026-09-26T16:30:00Z"><strong>12:30 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Paramount+</a></td>
+  <td>Kansas City</td><td>Denver</td><td class="time-cell" data-announced="2026-09-26T16:30:00Z"><strong>12:30 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para&shy;mount+</a></td>
 </tr>
 <tr>
-  <td>Washington</td><td>Angel City</td><td class="time-cell" data-announced="2026-09-26T22:30:00Z" data-approx="2026-09-26T22:34:00Z">6:30/<strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+  <td>Washington</td><td>Angel City</td><td class="time-cell" data-announced="2026-09-26T22:30:00Z" data-approx="2026-09-26T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr>
-  <td>Portland</td><td>Houston</td><td class="time-cell" data-announced="2026-09-27T00:45:00Z" data-approx="2026-09-27T00:49:00Z">8:45/<strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+  <td>Portland</td><td>Houston</td><td class="time-cell" data-announced="2026-09-27T00:45:00Z" data-approx="2026-09-27T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 </tbody></table>
 ```
@@ -55,7 +55,7 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ```{=html}
 <table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
   <td>Bay</td><td>Orlando</td><td class="time-cell" data-announced="2026-09-27T21:00:00Z"><strong>5:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a></td>

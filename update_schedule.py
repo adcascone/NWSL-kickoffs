@@ -83,7 +83,7 @@ ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/usa.nwsl/scoreb
 MD_LINK = re.compile(r'\[([^\]]+)\]\(([^)]+)\)')
 
 TZ_TOGGLE_HTML = """\
-<div class="mb-3 d-flex align-items-center gap-2">
+<div class="tz-toggle mb-3 d-flex flex-wrap align-items-center gap-2">
   <span class="text-muted small fw-semibold me-1">Time zone:</span>
   <button class="btn btn-sm btn-primary tz-btn" onclick="setTZ('America/New_York', 'ET', this)">ET</button>
   <button class="btn btn-sm btn-outline-secondary tz-btn" onclick="setTZ('America/Chicago', 'CT', this)">CT</button>
@@ -183,7 +183,7 @@ def format_kickoff_md(et_dt: datetime, networks: list[str]) -> str:
 def format_kickoff_html(et_dt: datetime, networks: list[str]) -> str:
     announced, period, approx = _kickoff_parts(et_dt, networks)
     if approx:
-        return f"{announced}/<strong>{approx} {period} ET</strong>"
+        return f"{announced}/<wbr><strong>{approx} {period} ET</strong>"
     return f"<strong>{announced} {period} ET</strong>"
 
 
@@ -206,6 +206,13 @@ def format_stream_md(networks: list[str]) -> str:
     return ", ".join(STREAM_LINKS.get(n, n) for n in networks) or "TBD"
 
 
+# Soft hyphens mark where long network names may break on narrow phone screens
+# (invisible unless the break is used). Other names only wrap at spaces.
+BREAK_HINTS: dict[str, str] = {
+    "Paramount+": "Para&shy;mount+",
+}
+
+
 def format_stream_html(networks: list[str]) -> str:
     links = []
     for n in networks:
@@ -213,6 +220,7 @@ def format_stream_html(networks: list[str]) -> str:
         m = MD_LINK.match(md)
         if m:
             text, url = m.group(1), m.group(2)
+            text = BREAK_HINTS.get(text, text)
             links.append(f'<a href="{url}" target="_blank" rel="noopener">{text}</a>')
         else:
             links.append(md)
@@ -237,7 +245,7 @@ def build_index_content(games: list[dict]) -> str:
         lines += [f"### {d.strftime('%A, %B %-d')}", "", "```{=html}"]
         lines += [
             '<table class="table">',
-            "<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>",
+            "<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>",
             "<tbody>",
         ]
         for g in by_date[d]:
@@ -324,7 +332,7 @@ def write_schedule_qmd(path: str, games: list[dict]) -> None:
     dropdown = [
         *mobile_jump,
         TZ_TOGGLE_HTML,
-        '<div class="mb-4 d-flex align-items-center gap-2">',
+        '<div class="mb-4 d-flex flex-wrap align-items-center gap-2">',
         '  <label for="team-select" class="fw-semibold text-nowrap mb-0">Filter by team:</label>',
         '  <select id="team-select" class="form-select" style="max-width: 220px;" onchange="filterTeam(this.value)">',
         '    <option value="all">All Teams</option>',
@@ -353,7 +361,7 @@ def write_schedule_qmd(path: str, games: list[dict]) -> None:
             lines.append(f'<div class="day-section"><h3>{d.strftime("%A, %B %-d")}</h3>')
             lines += [
                 '<table class="table table-sm table-hover">',
-                "<thead><tr><th>Home</th><th>Away</th><th>Announced/Approx. Kickoff Time</th><th>Stream</th></tr></thead>",
+                "<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>",
                 "<tbody>",
             ]
             for g in dates[d]:
