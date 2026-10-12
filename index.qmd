@@ -15,20 +15,53 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ## October
 
-### Sunday, October 4
+### Friday, October 16
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>NJ/NY</td><td>Angel City</td><td class="time-cell" data-announced="2026-10-04T17:00:00Z"><strong>1:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a></td>
+  <td>Boston</td><td>Louisville</td><td class="time-cell" data-announced="2026-10-17T00:00:00Z" data-approx="2026-10-17T00:10:00Z">8:00/<wbr><strong>8:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+</tr>
+</tbody></table>
+```
+
+### Saturday, October 17
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Washington</td><td>NJ/NY</td><td class="time-cell" data-announced="2026-10-17T16:30:00Z"><strong>12:30 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a>, <a href="https://www.paramountplus.com/" target="_blank" rel="noopener">Para&shy;mount+</a></td>
 </tr>
 <tr>
-  <td>Chicago</td><td>Denver</td><td class="time-cell" data-announced="2026-10-04T20:00:00Z"><strong>4:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
+  <td>Utah Royals</td><td>Kansas City</td><td class="time-cell" data-announced="2026-10-17T22:30:00Z" data-approx="2026-10-17T22:34:00Z">6:30/<wbr><strong>6:34 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
 </tr>
 <tr>
-  <td>Houston</td><td>Washington</td><td class="time-cell" data-announced="2026-10-04T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://therokuchannel.roku.com/" target="_blank" rel="noopener">Roku Sports Channel</a></td>
+  <td>North Carolina</td><td>San Diego</td><td class="time-cell" data-announced="2026-10-17T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://www.nwslsoccer.com/plus" target="_blank" rel="noopener">NWSL+</a></td>
+</tr>
+<tr>
+  <td>Denver</td><td>Angel City</td><td class="time-cell" data-announced="2026-10-18T00:45:00Z" data-approx="2026-10-18T00:49:00Z">8:45/<wbr><strong>8:49 PM ET</strong></td><td><a href="https://www.ionnwsl.com/" target="_blank" rel="noopener">ION</a></td>
+</tr>
+</tbody></table>
+```
+
+### Sunday, October 18
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Houston</td><td>Orlando</td><td class="time-cell" data-announced="2026-10-18T17:00:00Z"><strong>1:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS Sports Network</a></td>
+</tr>
+<tr>
+  <td>Bay</td><td>Portland</td><td class="time-cell" data-announced="2026-10-18T21:00:00Z"><strong>5:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN</a>, <a href="https://plus.espn.com/" target="_blank" rel="noopener">ESPN Deportes</a></td>
+</tr>
+<tr>
+  <td>Chicago</td><td>Seattle</td><td class="time-cell" data-announced="2026-10-18T23:00:00Z"><strong>7:00 PM ET</strong></td><td><a href="https://therokuchannel.roku.com/" target="_blank" rel="noopener">Roku Sports Channel</a></td>
 </tr>
 </tbody></table>
 ```
