@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This site was created by Arianna D. Cascone (ariannacascone4@gmail.com). If you notice any issues, please feel free to send me an email or file an issue on GitHub.\nAlso, connect with me on BlueSky at @casconearianna.bsky.social."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "NWSL Kickoff Times and Streaming Info",
@@ -18,7 +11,7 @@
     "href": "index.html#november",
     "title": "NWSL Kickoff Times and Streaming Info",
     "section": "November",
-    "text": "November\n\nSunday, November 1\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nAngel City\nBoston\n5:00 PM ET\nTBD\n\n\nBay\nSan Diego\n5:00 PM ET\nTBD\n\n\nNJ/NY\nUtah Royals\n5:00 PM ET\nTBD\n\n\nHouston\nPortland\n5:00 PM ET\nTBD\n\n\nNorth Carolina\nDenver\n5:00 PM ET\nTBD\n\n\nLouisville\nKansas City\n5:00 PM ET\nTBD\n\n\nSeattle\nOrlando\n5:00 PM ET\nTBD\n\n\nWashington\nChicago\n5:00 PM ET\nTBD\n\n\n\n*Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late."
+    "text": "November\n\nFriday, November 6\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nUtah Royals\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, November 7\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nKansas City\nAngel City\n12:00 PM ET\nCBS\n\n\n\n\n\nSunday, November 8\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nNJ/NY\nSeattle\n12:30 PM ET\nABC\n\n\nWashington\nPortland\n3:00 PM ET\nABC\n\n\n\n*Kickoff times are approximate based on historical trends. On the national channels (i.e., ABC, CBS, etc.), there is always the risk of kickoff time shifting to accomodate previous programs running late."
   },
   {
     "objectID": "index.html#faqs",
@@ -26,6 +19,13 @@
     "title": "NWSL Kickoff Times and Streaming Info",
     "section": "FAQs",
     "text": "FAQs\nWhat is NWSL+?\n\nNWSL+ is a digital streaming service that gives fans access to live NWSL games, match recaps, and highlights. It’s a free service available online, and on the NWSL+ app on Apple TV, Fire TV, and Roku. Learn more here.\n\nCan I stream CBS games on Paramount+?\n\nCBS games can be watched on your local CBS affiliate (over-the-air or via cable/satellite). Streaming on Paramount+ is only available on the Paramount+ with SHOWTIME (Premium) plan. The cheaper Paramount+ Essentials plan does not include live local CBS streams, and unlike past seasons, no matches are streaming-only on Paramount+.\n\nWhat is the Roku Sports Channel?\n\nThe Roku Sports Channel is the NWSL’s exclusive streaming home for eight Sunday night matches from August 30 through October 25, 2026, with 25 Sunday night matches coming in 2027.\nIt’s free through The Roku Channel, with no subscription required. You don’t need a Roku device: The Roku Channel is available on Roku devices and TVs, online at TheRokuChannel.com, on iOS and Android, and on Amazon Fire TV, Samsung TVs, Google TVs, and other Android TV devices.\nMore information can be found in the NWSL’s announcement.\n\nThis site was created by Arianna D. Cascone. If you notice any issues, please feel free to send me an email or file an issue on GitHub using the buttons below!\n\n\n    \n\n\n    \n\n\n    \n\n\n    \n\n Website inspired by: https://mlskickofftimes.com/."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site was created by Arianna D. Cascone (ariannacascone4@gmail.com). If you notice any issues, please feel free to send me an email or file an issue on GitHub.\nAlso, connect with me on BlueSky at @casconearianna.bsky.social."
   },
   {
     "objectID": "schedule.html",
@@ -88,6 +88,6 @@
     "href": "schedule.html#november",
     "title": "2026 NWSL Full Schedule",
     "section": "November",
-    "text": "November\nSunday, November 1\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nAngel City\nBoston\n5:00 PM ET\nTBD\n\n\nBay\nSan Diego\n5:00 PM ET\nTBD\n\n\nNJ/NY\nUtah Royals\n5:00 PM ET\nTBD\n\n\nHouston\nPortland\n5:00 PM ET\nTBD\n\n\nNorth Carolina\nDenver\n5:00 PM ET\nTBD\n\n\nLouisville\nKansas City\n5:00 PM ET\nTBD\n\n\nSeattle\nOrlando\n5:00 PM ET\nTBD\n\n\nWashington\nChicago\n5:00 PM ET\nTBD"
+    "text": "November\nSunday, November 1\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nAngel City\nBoston\n5:00 PM ET\nESPN+\n\n\nBay\nSan Diego\n5:00 PM ET\nESPN+\n\n\nNJ/NY\nUtah Royals\n5:00 PM ET\nESPN\n\n\nHouston\nPortland\n5:00 PM ET\nESPN+\n\n\nNorth Carolina\nDenver\n5:00 PM ET\nESPN+\n\n\nLouisville\nKansas City\n5:00 PM ET\nESPN+\n\n\nSeattle\nOrlando\n5:00 PM ET\nESPN+\n\n\nWashington\nChicago\n5:00 PM ET\nESPN+\n\n\n\n\n\nFriday, November 6\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nSan Diego\nUtah Royals\n10:00/10:10 PM ET\nPrime Video\n\n\n\n\n\nSaturday, November 7\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nKansas City\nAngel City\n12:00 PM ET\nCBS\n\n\n\n\n\nSunday, November 8\n\n\n\n\nHome\nAway\nAnnounced/Approx. Kickoff Time\nStream\n\n\n\n\nNJ/NY\nSeattle\n12:30 PM ET\nABC\n\n\nWashington\nPortland\n3:00 PM ET\nABC"
   }
 ]
