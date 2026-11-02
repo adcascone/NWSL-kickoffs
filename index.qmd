@@ -15,35 +15,41 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ## November
 
-### Sunday, November 1
+### Friday, November 6
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Angel City</td><td>Boston</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
+  <td>San Diego</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-11-07T03:00:00Z" data-approx="2026-11-07T03:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+</tr>
+</tbody></table>
+```
+
+### Saturday, November 7
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>Kansas City</td><td>Angel City</td><td class="time-cell" data-announced="2026-11-07T17:00:00Z"><strong>12:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a></td>
+</tr>
+</tbody></table>
+```
+
+### Sunday, November 8
+
+```{=html}
+<table class="table">
+<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
+<tbody>
+<tr>
+  <td>NJ/NY</td><td>Seattle</td><td class="time-cell" data-announced="2026-11-08T17:30:00Z"><strong>12:30 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ABC</a></td>
 </tr>
 <tr>
-  <td>Bay</td><td>San Diego</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
-</tr>
-<tr>
-  <td>NJ/NY</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
-</tr>
-<tr>
-  <td>Houston</td><td>Portland</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
-</tr>
-<tr>
-  <td>North Carolina</td><td>Denver</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
-</tr>
-<tr>
-  <td>Louisville</td><td>Kansas City</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
-</tr>
-<tr>
-  <td>Seattle</td><td>Orlando</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
-</tr>
-<tr>
-  <td>Washington</td><td>Chicago</td><td class="time-cell" data-announced="2026-11-01T22:00:00Z"><strong>5:00 PM ET</strong></td><td>TBD</td>
+  <td>Washington</td><td>Portland</td><td class="time-cell" data-announced="2026-11-08T20:00:00Z"><strong>3:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ABC</a></td>
 </tr>
 </tbody></table>
 ```
