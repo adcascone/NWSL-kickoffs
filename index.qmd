@@ -15,41 +15,26 @@ title: "NWSL Kickoff Times and Streaming Info"
 
 ## November
 
-### Friday, November 6
+### Saturday, November 14
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>San Diego</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-11-07T03:00:00Z" data-approx="2026-11-07T03:10:00Z">10:00/<wbr><strong>10:10 PM ET</strong></td><td><a href="http://www.amazon.com/nwsl" target="_blank" rel="noopener">Prime Video</a></td>
+  <td>Washington</td><td>Utah Royals</td><td class="time-cell" data-announced="2026-11-14T17:00:00Z"><strong>12:00 PM ET</strong></td><td>TBD</td>
 </tr>
 </tbody></table>
 ```
 
-### Saturday, November 7
+### Sunday, November 15
 
 ```{=html}
 <table class="table">
 <thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
 <tbody>
 <tr>
-  <td>Kansas City</td><td>Angel City</td><td class="time-cell" data-announced="2026-11-07T17:00:00Z"><strong>12:00 PM ET</strong></td><td><a href="https://www.paramountplus.com/" target="_blank" rel="noopener">CBS</a></td>
-</tr>
-</tbody></table>
-```
-
-### Sunday, November 8
-
-```{=html}
-<table class="table">
-<thead><tr><th>Home</th><th>Away</th><th>Announced/<wbr>Approx. Kickoff Time</th><th>Stream</th></tr></thead>
-<tbody>
-<tr>
-  <td>NJ/NY</td><td>Seattle</td><td class="time-cell" data-announced="2026-11-08T17:30:00Z"><strong>12:30 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ABC</a></td>
-</tr>
-<tr>
-  <td>Washington</td><td>Portland</td><td class="time-cell" data-announced="2026-11-08T20:00:00Z"><strong>3:00 PM ET</strong></td><td><a href="https://plus.espn.com/" target="_blank" rel="noopener">ABC</a></td>
+  <td>NJ/NY</td><td>Kansas City</td><td class="time-cell" data-announced="2026-11-15T20:00:00Z"><strong>3:00 PM ET</strong></td><td>TBD</td>
 </tr>
 </tbody></table>
 ```
